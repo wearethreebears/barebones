@@ -8,7 +8,7 @@ export default defineNuxtModule({
       // Add ./components dir to the list
       dirs.push({
         path: fileURLToPath(new URL("./src/components", import.meta.url)),
-        prefix: "jumpstart",
+        prefix: "base",
       });
     },
   },
