@@ -1,6 +1,6 @@
 {
-  "name": "tailwind-components",
-  "version": "0.0.0",
+  "name": "@wearethreebears/base-components",
+  "version": "0.1.0",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -44,5 +44,17 @@
     "vitest": "^0.9.3",
     "vue-loader": "^16.8.3",
     "vue-tsc": "^0.34.7"
-  }
+  },
+  "description": "This template should help get you started developing with Vue 3 in Vite.",
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wearethreebears/base-components.git"
+  },
+  "author": "Liam Hall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wearethreebears/base-components/issues"
+  },
+  "homepage": "https://github.com/wearethreebears/base-components#readme"
 }
