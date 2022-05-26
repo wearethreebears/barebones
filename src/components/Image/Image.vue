@@ -7,7 +7,7 @@
         :alt="props.image.alt"
         :height="props.image.height"
         :width="props.image.width"
-        ref="defaultImage"
+        ref="componentImage"
         loading="lazy"
       />
     </picture>
@@ -39,7 +39,8 @@ const props = defineProps({
 
 const { part } = useComponent(parts, props, classProps);
 
-const defaultImage = ref(null) as Ref<HTMLElement | null>;
+const componentImage: Ref<HTMLElement | undefined> = ref(undefined);
+const wrapperPadding: Ref<string> = ref('')
 
 const getGCD = ( width: number, height: number ): number => {
     return (width % height) ? getGCD(height,width % height) : height;
@@ -49,23 +50,23 @@ const ratio = ( width: number, height: number ): string => {
     return `${width/gcd}/${height/gcd}`;
 }
 
-const wrapperPadding: ComputedRef<string> = computed(() => {
+const setWrapperPadding = (): void => {
   const width: number = props.image.width;
   const height: number = props.image.height;
-  if (CSS?.supports("aspect-ratio: 1/1")) {
-    return `aspect-ratio: ${ratio(width, height)}`
-  }
-  const padding = (height / width) * 100;
-  return `padding-top: ${padding}%`;
-});
+
+  const padding: string = CSS?.supports("aspect-ratio: 1/1") ? `aspect-ratio: ${ratio(width, height)}` : `padding-top: ${padding}%`;
+
+  wrapperPadding.value = padding;
+}
 
 const loadImage: () => void = (): void => {
-  (defaultImage.value as unknown as HTMLElement).addEventListener('load', () => {
-    (defaultImage.value as unknown as HTMLElement).setAttribute('loaded', 'true');
+  (componentImage.value as unknown as HTMLElement).addEventListener('load', () => {
+    (componentImage.value as unknown as HTMLElement).setAttribute('loaded', 'true');
   });
 };
 
 onMounted((): void => {
   loadImage();
+  setWrapperPadding();
 });
 </script>
