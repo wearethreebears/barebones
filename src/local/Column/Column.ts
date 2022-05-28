@@ -1,4 +1,4 @@
-import type { Parts } from "@jumpstart/types/component";
+import type { Parts } from "@barebones/types/component";
 
 const parts: Parts = {
   component: {

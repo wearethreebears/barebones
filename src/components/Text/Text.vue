@@ -3,13 +3,13 @@
 </template>
 
 <script setup lang="ts">
-import useComponent from "@jumpstart/composables/useComponent";
+import useComponent from "@barebones/composables/useComponent";
 
 import type { PropType } from "vue";
-import type { Text } from '@jumpstart/types/tag';
+import type { Text } from '@barebones/types/tag';
 
-import { classProps } from "@jumpstart-local/Text/Text.classes";
-import parts from "@jumpstart-local/Text/Text";
+import { classProps } from "@barebones-local/Text/Text.classes";
+import parts from "@barebones-local/Text/Text";
 
 const props = defineProps({
   ...classProps,

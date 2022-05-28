@@ -3,9 +3,9 @@ import type { ComputedRef } from "vue";
 
 import type {
   Parts,
-} from "@jumpstart/types/component";
+} from "@barebones/types/component";
 
-import type { ClassProps, Props } from "@jumpstart/types/prop";
+import type { ClassProps, Props } from "@barebones/types/prop";
 
 export default function (parts: Parts, props: Props, classProps: ClassProps = {}) {
 
@@ -32,7 +32,7 @@ export default function (parts: Parts, props: Props, classProps: ClassProps = {}
     warnings.forEach((warning: string) => {
       if (!successes.includes(warning)) {
         const [propClass, prop] = warning.split('-');
-        console.warn(`JUMPSTART WARNING: ${propClass} does not exist on ${prop}`);
+        console.warn(`barebones WARNING: ${propClass} does not exist on ${prop}`);
       }
     });
 

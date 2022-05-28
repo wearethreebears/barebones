@@ -11,6 +11,20 @@
     <BaseColumn span="6" class="text-white bg-green-500">Hello world</BaseColumn>
   </BaseGrid>
 
+  <BaseTabs :tabs="[
+    {
+      key: 'foo',
+      title: 'Foo'
+    },
+    {
+      key: 'bar',
+      title: 'Bar'
+    }
+  ]">
+    <template #foo>This is Foo</template>
+    <template #bar>This is Bar</template>
+  </BaseTabs>
+
   <div style="width: 200px">
     <BaseImage :image="{ url: 'https://via.placeholder.com/150', width: 150, height: 150, alt: 'Hello world'}" />
   </div>
@@ -22,5 +36,6 @@ import BaseText from "./Text/Text.vue";
 import BaseGrid from "./Grid/Grid.vue";
 import BaseColumn from "./Column/Column.vue";
 import BaseImage from "./Image/Image.vue";
+import BaseTabs from "./Tabs/Tabs.vue";
 
 </script>

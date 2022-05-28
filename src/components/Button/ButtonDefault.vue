@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 import type { PropType } from 'vue';
-import { BUTTON_TYPES } from '@jumpstart/constants/button';
+import { BUTTON_TYPES } from '@barebones/constants/button';
 
 const props = defineProps({
     type: {

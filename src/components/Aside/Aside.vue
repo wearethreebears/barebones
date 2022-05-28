@@ -3,14 +3,14 @@
 </template>
 
 <script lang="ts">
-export default { name: 'SkeletonComponent' }
+export default { name: 'Aside' }
 </script>
 
 <script setup lang="ts">
 import useComponent from "@barebones/composables/useComponent";
 
-import { classProps } from "@barebones-local/SkeletonComponent/SkeletonComponent.classes";
-import parts from "@barebones-local/SkeletonComponent/SkeletonComponent";
+import { classProps } from "@barebones-local/Aside/Aside.classes";
+import parts from "@barebones-local/Aside/Aside";
 
 const props = defineProps({
   ...classProps,

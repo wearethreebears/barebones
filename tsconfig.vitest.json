@@ -8,10 +8,10 @@
   },
   "baseUrl": "./",
   "paths": {
-    "@jumpstart/*": [
+    "@barebones/*": [
       "src/*"
     ],
-    "@jumpstart-local/*": [
+    "@barebones-local/*": [
       "src/local/*"
     ],
   }

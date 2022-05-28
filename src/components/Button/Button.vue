@@ -28,15 +28,15 @@ export default { name: 'Button' }
 import { computed } from "vue";
 import type { ComputedRef, PropType } from "vue";
 
-import useComponent from "@jumpstart/composables/useComponent";
+import useComponent from "@barebones/composables/useComponent";
 
 import ButtonDefault from './ButtonDefault.vue';
 import ButtonLink from './ButtonLink.vue';
 
-import { BUTTON_STATES } from '@jumpstart/constants/button';
+import { BUTTON_STATES } from '@barebones/constants/button';
 
-import classProps from "@jumpstart-local/Button/Button.classes";
-import parts from "@jumpstart-local/Button/Button";
+import classProps from "@barebones-local/Button/Button.classes";
+import parts from "@barebones-local/Button/Button";
 
 const props = defineProps({
   ...classProps,

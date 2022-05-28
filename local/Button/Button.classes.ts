@@ -1,5 +1,5 @@
 import type { PropType } from "vue";
-import type { ClassProps } from "@jumpstart/types/prop";
+import type { ClassProps } from "@barebones/types/prop";
 
 export const classProps: ClassProps = {
   design: {

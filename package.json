@@ -1,5 +1,5 @@
 {
-  "name": "@wearethreebears/base-components",
+  "name": "@wearethreebears/barebones",
   "version": "0.1.0",
   "scripts": {
     "dev": "vite",

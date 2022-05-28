@@ -6,8 +6,8 @@
     "composite": true,
     "baseUrl": ".",
     "paths": {
-      "@jumpstart/*": ["./src/*"],
-      "@jumpstart-local/*": ["./src/local/*"]
+      "@barebones/*": ["./src/*"],
+      "@barebones-local/*": ["./src/local/*"]
     }
   }
 }

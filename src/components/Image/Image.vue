@@ -19,15 +19,15 @@ export default { name: 'Image' }
 </script>
 
 <script setup lang="ts">
-import { computed, ref, onMounted } from 'vue';
-import type { ComputedRef, Ref, PropType } from 'vue';
+import { ref, onMounted } from 'vue';
+import type { Ref, PropType } from 'vue';
 
-import type { Image } from '@jumpstart/types/image';
+import type { Image } from '@barebones/types/image';
 
-import useComponent from "@jumpstart/composables/useComponent";
+import useComponent from "@barebones/composables/useComponent";
 
-import { classProps } from "@jumpstart-local/Image/Image.classes";
-import parts from "@jumpstart-local/Image/Image";
+import { classProps } from "@barebones-local/Image/Image.classes";
+import parts from "@barebones-local/Image/Image";
 
 const props = defineProps({
   ...classProps,
@@ -54,7 +54,7 @@ const setWrapperPadding = (): void => {
   const width: number = props.image.width;
   const height: number = props.image.height;
 
-  const padding: string = CSS?.supports("aspect-ratio: 1/1") ? `aspect-ratio: ${ratio(width, height)}` : `padding-top: ${padding}%`;
+  const padding: string = CSS?.supports("aspect-ratio: 1/1") ? `aspect-ratio: ${ratio(width, height)}` : `padding-top: ${(height / width) * 100}%`;
 
   wrapperPadding.value = padding;
 }

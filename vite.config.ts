@@ -9,8 +9,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@jumpstart': fileURLToPath(new URL('./src', import.meta.url)),
-      '@jumpstart-local': fileURLToPath(new URL('./src/local', import.meta.url))
+      '@barebones': fileURLToPath(new URL('./src', import.meta.url)),
+      '@barebones-local': fileURLToPath(new URL('./src/local', import.meta.url))
     }
   }
 })
