@@ -6,7 +6,7 @@
   >
     <picture>
       <img
-        :class="part['image']"
+        :class="[part['image'], loadingDefault, loadingClasses]"
         :src="props.image.url"
         :alt="props.image.alt"
         :height="props.image.height"
@@ -31,7 +31,11 @@ import type { Image } from "@barebones/types/image";
 import useComponent from "@barebones/composables/useComponent";
 
 import { classProps } from "@barebones-local/Image/Image.classes";
-import parts from "@barebones-local/Image/Image";
+import parts, {
+  loadingDefault,
+  loadedFalse,
+  loadedTrue,
+} from "@barebones-local/Image/Image";
 
 const props = defineProps({
   ...classProps,
@@ -45,6 +49,7 @@ const { part } = useComponent(parts, props, classProps);
 
 const componentImage: Ref<HTMLElement | undefined> = ref(undefined);
 const wrapperPadding: Ref<string> = ref("");
+const loadingClasses: Ref<string> = ref(loadedFalse);
 
 const getGCD = (width: number, height: number): number => {
   return width % height ? getGCD(height, width % height) : height;
@@ -73,6 +78,7 @@ const loadImage: () => void = (): void => {
         "loaded",
         "true"
       );
+      loadingClasses.value = loadedTrue;
     }
   );
 };
