@@ -3,7 +3,7 @@ import type { Parts } from "@barebones/types/component";
 const parts: Parts = {
   component: {
     span: {
-      'default': ['font-col-span-12'],
+      default: ["font-col-span-12"],
       "1": ["col-span-1"],
       "2": ["col-span-2"],
       "3": ["col-span-3"],
@@ -48,7 +48,7 @@ const parts: Parts = {
       "lg-6": ["lg:col-span-6"],
       "lg-7": ["lg:col-span-7"],
       "lg-8": ["lg:col-span-8"],
-      "lg-9":[ "lg:col-span-9"],
+      "lg-9": ["lg:col-span-9"],
       "lg-10": ["lg:col-span-10"],
       "lg-11": ["lg:col-span-11"],
       "lg-12": ["lg:col-span-12"],
@@ -77,7 +77,7 @@ const parts: Parts = {
       "2xl-11": ["2xl:col-span-11"],
       "2xl-12": ["2xl:col-span-12"],
     },
-  }
-}
+  },
+};
 
 export default parts;

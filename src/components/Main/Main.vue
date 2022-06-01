@@ -1,9 +1,9 @@
 <template>
-  <div :data-component="$options.name" :class="part['component']"></div>
+  <main :data-component="$options.name" :class="part['component']"></main>
 </template>
 
 <script lang="ts">
-export default { name: 'Main' }
+export default { name: "Main" };
 </script>
 
 <script setup lang="ts">

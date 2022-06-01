@@ -7,11 +7,11 @@
 </template>
 
 <script lang="ts">
-export default { name: 'Overlay' }
+export default { name: "Overlay" };
 </script>
 
 <script setup lang="ts">
-import { watch, toRefs } from 'vue';
+import { watch, toRefs } from "vue";
 import useComponent from "@barebones/composables/useComponent";
 
 import { classProps } from "@barebones-local/Overlay/Overlay.classes";
@@ -21,16 +21,16 @@ const props = defineProps({
   ...classProps,
 });
 
-const emit = defineEmits(['visibility:change']);
+const emit = defineEmits(["visibility:change"]);
 
 const { part } = useComponent(parts, props, classProps);
 
-const { state } = toRefs(props)
+const { state } = toRefs(props);
 
 watch(state, async (newState: string): Promise<void> => {
-    // nextTick doesn't wait for visibility transition
-    await setTimeout(() => {
-      emit('visibility:change', newState)
-    }, 100);
-})
+  // nextTick doesn't wait for visibility transition
+  await setTimeout(() => {
+    emit("visibility:change", newState);
+  }, 100);
+});
 </script>

@@ -1,14 +1,19 @@
 <template>
-  <component :is="tag" :data-component="$options.name" :class="part['component']"><slot /></component>
+  <component
+    :is="tag"
+    :data-component="$options.name"
+    :class="part['component']"
+    ><slot
+  /></component>
 </template>
 
 <script lang="ts">
-export default { name: 'Grid' }
+export default { name: "Grid" };
 </script>
 
 <script setup lang="ts">
 import type { PropType } from "vue";
-import type { Layout } from '@barebones/types/tag';
+import type { Layout } from "@barebones/types/tag";
 
 import useComponent from "@barebones/composables/useComponent";
 
@@ -20,7 +25,7 @@ const props = defineProps({
   tag: {
     required: false,
     type: String as PropType<Layout>,
-    default: 'div'
+    default: "div",
   },
 });
 

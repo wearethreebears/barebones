@@ -1,5 +1,5 @@
-import { ref, nextTick } from 'vue';
-import type { Ref } from 'vue';
+import { ref, nextTick } from "vue";
+import type { Ref } from "vue";
 
 interface FocusTrap {
   initFocusTrap: (element: HTMLElement) => void;
@@ -13,15 +13,17 @@ const canTabBackwards: Ref<boolean> = ref(false);
 
 const getKeyboardFocusableElements = (element: Element): HTMLElement[] => {
   return [
-      // @ts-ignore: @todo - This could be better
+    // @ts-ignore: @todo - This could be better
     ...element.querySelectorAll(
       'a[href], button, input, textarea, select, details,[tabindex]:not([tabindex="-1"])'
     ),
-  ].filter((el) => !el.hasAttribute('disabled') && !el.getAttribute('aria-hidden')) as HTMLElement[];
+  ].filter(
+    (el) => !el.hasAttribute("disabled") && !el.getAttribute("aria-hidden")
+  ) as HTMLElement[];
 };
 
 const addFocusTrapEventListeners = (event: KeyboardEvent): void => {
-  const isTabPressed = event.key === 'Tab';
+  const isTabPressed = event.key === "Tab";
 
   if (!isTabPressed) return;
 
@@ -43,19 +45,20 @@ export default function useFocusTrap(): FocusTrap {
   const initFocusTrap = (element: HTMLElement): void => {
     focusElements.value = getKeyboardFocusableElements(element);
     firstFocusElement.value = focusElements.value[0];
-    lastFocusElement.value = focusElements.value[focusElements.value.length - 1];
+    lastFocusElement.value =
+      focusElements.value[focusElements.value.length - 1];
 
-    element.setAttribute('tabindex', '1');
+    element.setAttribute("tabindex", "1");
     nextTick(() => {
       (firstFocusElement.value as HTMLElement).focus();
-      element.removeAttribute('tabindex');
+      element.removeAttribute("tabindex");
     });
-    element.addEventListener('keydown', addFocusTrapEventListeners);
+    element.addEventListener("keydown", addFocusTrapEventListeners);
   };
 
   const destroyFocusTrap = (element: HTMLElement): void => {
-    element.removeAttribute('tabindex');
-    element.removeEventListener('keydown', addFocusTrapEventListeners);
+    element.removeAttribute("tabindex");
+    element.removeEventListener("keydown", addFocusTrapEventListeners);
   };
 
   return {

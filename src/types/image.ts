@@ -1,6 +1,6 @@
 export interface Image {
-    url: string;
-    width: number;
-    height: number;
-    alt: string;
+  url: string;
+  width: number;
+  height: number;
+  alt: string;
 }

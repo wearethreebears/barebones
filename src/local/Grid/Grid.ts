@@ -1,18 +1,17 @@
-import type { Parts } from '@barebones/types/component';
+import type { Parts } from "@barebones/types/component";
 
 // Base Classes
-const ComponentColumnsDefault = 'grid';
+const ComponentColumnsDefault = "grid";
 
 const parts: Parts = {
   component: {
     columns: {
-      'default': [ComponentColumnsDefault, 'grid-cols-12 w-full'],
+      default: [ComponentColumnsDefault, "grid-cols-12 w-full"],
     },
     gap: {
-      'default': ['gap-4'],
-    }
-  }
-}
+      default: ["gap-4"],
+    },
+  },
+};
 
 export default parts;
-

@@ -1,4 +1,4 @@
 export interface Tab {
-    key: string;
-	title: string;
+  key: string;
+  title: string;
 }
