@@ -6,7 +6,7 @@ const parts: Parts = {
   component: {},
   image: {
     width: {
-      'default': ['w-full'],
+      default: ['w-full'],
     },
   }
 }

@@ -1,5 +1,6 @@
 <template>
   <component
+    ref="button"
     :data-component="$options.name"
     :is="component"
     :to="props.to"
@@ -25,8 +26,8 @@ export default { name: 'Button' }
 </script>
 
 <script setup lang="ts">
-import { computed } from "vue";
-import type { ComputedRef, PropType } from "vue";
+import { computed, ref } from "vue";
+import type { ComputedRef, Ref, PropType } from "vue";
 
 import useComponent from "@barebones/composables/useComponent";
 
@@ -53,8 +54,14 @@ const props = defineProps({
 
 const { part } = useComponent(parts, props, classProps);
 
+const button: Ref<typeof ButtonDefault | typeof ButtonLink> = ref(null as unknown as typeof ButtonDefault);
+
 const component: ComputedRef<any> = computed((): any => {
   return props.to !== undefined ? ButtonLink : ButtonDefault;
 });
+
+const focusOnButton = (): void => button.value.focusOnButton();
+
+defineExpose({ focusOnButton })
 
 </script>

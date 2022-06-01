@@ -87,19 +87,21 @@ const onButtonTabDown = (event: KeyboardEvent): void => {
     return newContentItem.focus()
 }
 
+// @todo repeated code - Is is worth combining?
+
 const onButtonArrowLeftDown = (event: KeyboardEvent): void => {
-  let index = (event.target as HTMLElement).getAttribute('data-index') as any
+  let index: number = parseInt((event.target as HTMLElement).getAttribute('data-index') as string)
   if (index > 0) {
-    let newIndex = parseInt(index) - 1,
+    let newIndex = index - 1,
       newKey = (key.value as HTMLButtonElement[])[newIndex]
     return newKey.focus()
   }
 }
 
 const onButtonArrowRightDown = (event: KeyboardEvent): void => {
-  let index = (event.target as HTMLElement).getAttribute('data-index') as any
+  let index: number = parseInt((event.target as HTMLElement).getAttribute('data-index') as string)
   if (index < props.tabs.length) {
-    let newIndex = parseInt(index) + 1,
+    let newIndex = index + 1,
       newKey = (key.value as HTMLButtonElement[])[newIndex]
     return newKey.focus()
   }
