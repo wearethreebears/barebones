@@ -31,11 +31,9 @@ import type { Image } from "@barebones/types/image";
 import useComponent from "@barebones/composables/useComponent";
 
 import { classProps } from "@barebones-local/Image/Image.classes";
-import parts, {
-  loadingDefault,
-  loadedFalse,
-  loadedTrue,
-} from "@barebones-local/Image/Image";
+import image from "@barebones-local/Image/Image";
+
+const { parts, loadingDefault, loadedFalse, loadedTrue } = image();
 
 const props = defineProps({
   ...classProps,

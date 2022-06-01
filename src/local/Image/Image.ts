@@ -1,19 +1,30 @@
 import type { Parts } from "@barebones/types/component";
 
-// Loading classes
-export const loadingDefault = "transition-opacity duration-300";
-export const loadedFalse = "opacity-0";
-export const loadedTrue = "opactity-1";
+interface Image {
+  parts: Parts;
+  loadingDefault: string;
+  loadedFalse: string;
+  loadedTrue: string;
+}
 
-// Base Classes
+export default function image(): Image {
+  const loadingDefault: string = "transition-opacity duration-300";
+  const loadedFalse: string = "opacity-0";
+  const loadedTrue: string = "opactity-1";
 
-const parts: Parts = {
-  component: {},
-  image: {
-    width: {
-      default: ["w-full"],
+  const parts: Parts = {
+    component: {},
+    image: {
+      width: {
+        default: ["w-full"],
+      },
     },
-  },
-};
+  };
 
-export default parts;
+  return {
+    loadingDefault,
+    loadedFalse,
+    loadedTrue,
+    parts,
+  };
+}

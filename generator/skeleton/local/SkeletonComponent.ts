@@ -1,9 +1,12 @@
 import type { Parts } from "@barebones/types/component";
+import type { SkeletonComponent } from "@barebones/types/components/SkeletonComponent";
 
-// Base Classes
+export default function ComponentSkeletonComponent(): SkeletonComponent {
+  const parts: Parts = {
+    component: {},
+  };
 
-const parts: Parts = {
-  component: {},
-};
-
-export default parts;
+  return {
+    parts,
+  };
+}
