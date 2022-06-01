@@ -44,7 +44,7 @@
 </template>
 
 <script lang="ts">
-export default { name: "Modal" };
+export default { name: "BonesModal" };
 </script>
 
 <script setup lang="ts">

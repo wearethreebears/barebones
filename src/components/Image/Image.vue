@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts">
-export default { name: "Image" };
+export default { name: "BonesImage" };
 </script>
 
 <script setup lang="ts">

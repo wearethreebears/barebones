@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-export default { name: "Overlay" };
+export default { name: "BonesOverlay" };
 </script>
 
 <script setup lang="ts">

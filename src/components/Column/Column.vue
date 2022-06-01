@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-export default { name: "Column" };
+export default { name: "BonesColumn" };
 </script>
 
 <script setup lang="ts">

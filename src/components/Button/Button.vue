@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts">
-export default { name: "Button" };
+export default { name: "BonesButton" };
 </script>
 
 <script setup lang="ts">

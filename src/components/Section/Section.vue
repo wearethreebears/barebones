@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-export default { name: "Section" };
+export default { name: "BonesSection" };
 </script>
 
 <script setup lang="ts">

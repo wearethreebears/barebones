@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-export default { name: "Grid" };
+export default { name: "BonesGrid" };
 </script>
 
 <script setup lang="ts">

@@ -2,6 +2,10 @@
   <component :is="tag" :class="part['component']"><slot /></component>
 </template>
 
+<script lang="ts">
+export default { name: "BonesText" };
+</script>
+
 <script setup lang="ts">
 import useComponent from "@barebones/composables/useComponent";
 
