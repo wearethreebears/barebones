@@ -1,5 +1,5 @@
-import Parts from "@barebones/types/components/SkeletonComponent";
+import type { Parts } from "@barebones/types/component";
 
-interface SkeletonComponent {
+export interface SkeletonComponent {
   parts: Parts;
 }
