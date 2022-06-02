@@ -1,15 +1,20 @@
 import type { Parts } from "@barebones/types/component";
+import type { Text } from "@barebones/types/components/Text";
 
 // Base Classes
-const parts: Parts = {
-  component: {
-    style: {
-      default: ["font-sans"],
+export default function TextLocal(): Text {
+  const parts: Parts = {
+    component: {
+      style: {
+        default: ["font-sans"],
+      },
+      color: {
+        default: ["text-slate-500"],
+      },
     },
-    color: {
-      default: ["text-slate-500"],
-    },
-  },
-};
+  };
 
-export default parts;
+  return {
+    parts,
+  };
+}

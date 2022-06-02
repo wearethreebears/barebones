@@ -58,7 +58,9 @@ import useComponent from "@barebones/composables/useComponent";
 import useFocusTrap from "@barebones/composables/useFocusTrap";
 
 import { classProps } from "@barebones-local/Modal/Modal.classes";
-import parts from "@barebones-local/Modal/Modal";
+import ModalLocal from "@barebones-local/Modal/Modal";
+
+const { parts } = ModalLocal();
 
 const props = defineProps({
   ...classProps,

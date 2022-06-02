@@ -1,9 +1,14 @@
 import type { Parts } from "@barebones/types/component";
+import type { Main } from "@barebones/types/components/Main";
 
 // Base Classes
 
-const parts: Parts = {
-  component: {},
-};
+export default function MainLocal(): Main {
+  const parts: Parts = {
+    component: {},
+  };
 
-export default parts;
+  return {
+    parts,
+  };
+}

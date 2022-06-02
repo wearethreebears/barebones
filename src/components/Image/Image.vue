@@ -31,9 +31,9 @@ import type { Image } from "@barebones/types/image";
 import useComponent from "@barebones/composables/useComponent";
 
 import { classProps } from "@barebones-local/Image/Image.classes";
-import image from "@barebones-local/Image/Image";
+import ImageLocal from "@barebones-local/Image/Image";
 
-const { parts, loadingDefault, loadedFalse, loadedTrue } = image();
+const { parts, loadingDefault, loadedFalse, loadedTrue } = ImageLocal();
 
 const props = defineProps({
   ...classProps,

@@ -1,4 +1,5 @@
 import type { Parts } from "@barebones/types/component";
+import type { Modal } from "@barebones/types/components/Modal";
 
 // Base Classes
 const ComponentDefault =
@@ -6,22 +7,26 @@ const ComponentDefault =
 const modalCloseDefault = "absolute top-4 right-4";
 const overlayCloseDefault = "absolute top-4 right-4";
 
-const parts: Parts = {
-  component: {
-    color: {
-      default: [ComponentDefault, "bg-white"],
+export default function ModalLocal(): Modal {
+  const parts: Parts = {
+    component: {
+      color: {
+        default: [ComponentDefault, "bg-white"],
+      },
     },
-  },
-  modalClose: {
-    color: {
-      default: [modalCloseDefault],
+    modalClose: {
+      color: {
+        default: [modalCloseDefault],
+      },
     },
-  },
-  overlayClose: {
-    color: {
-      default: [overlayCloseDefault],
+    overlayClose: {
+      color: {
+        default: [overlayCloseDefault],
+      },
     },
-  },
-};
+  };
 
-export default parts;
+  return {
+    parts,
+  };
+}

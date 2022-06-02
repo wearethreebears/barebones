@@ -69,7 +69,9 @@ import type { Tab } from "@barebones/types/tab";
 import useComponent from "@barebones/composables/useComponent";
 
 import { classProps } from "@barebones-local/Tabs/Tabs.classes";
-import parts from "@barebones-local/Tabs/Tabs";
+import TabsLocal from "@barebones-local/Tabs/Tabs";
+
+const { parts } = TabsLocal();
 
 const props = defineProps({
   ...classProps,

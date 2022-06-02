@@ -10,7 +10,9 @@ export default { name: "BonesSection" };
 import useComponent from "@barebones/composables/useComponent";
 
 import { classProps } from "@barebones-local/Section/Section.classes";
-import parts from "@barebones-local/Section/Section";
+import SectionLocal from "@barebones-local/Section/Section";
+
+const { parts } = SectionLocal();
 
 const props = defineProps({
   ...classProps,

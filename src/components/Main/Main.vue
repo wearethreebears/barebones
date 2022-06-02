@@ -10,7 +10,9 @@ export default { name: "BonesMain" };
 import useComponent from "@barebones/composables/useComponent";
 
 import { classProps } from "@barebones-local/Main/Main.classes";
-import parts from "@barebones-local/Main/Main";
+import MainLocal from "@barebones-local/Main/Main";
+
+const { parts } = MainLocal();
 
 const props = defineProps({
   ...classProps,

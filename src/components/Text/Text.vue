@@ -13,7 +13,9 @@ import type { PropType } from "vue";
 import type { Text } from "@barebones/types/tag";
 
 import { classProps } from "@barebones-local/Text/Text.classes";
-import parts from "@barebones-local/Text/Text";
+import TextLocal from "@barebones-local/Text/Text";
+
+const { parts } = TextLocal();
 
 const props = defineProps({
   ...classProps,

@@ -15,7 +15,9 @@ import { watch, toRefs } from "vue";
 import useComponent from "@barebones/composables/useComponent";
 
 import { classProps } from "@barebones-local/Overlay/Overlay.classes";
-import parts from "@barebones-local/Overlay/Overlay";
+import OverlayLocal from "@barebones-local/Overlay/Overlay";
+
+const { parts } = OverlayLocal();
 
 const props = defineProps({
   ...classProps,

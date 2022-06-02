@@ -1,9 +1,14 @@
 import type { Parts } from "@barebones/types/component";
+import type { Section } from "@barebones/types/components/Section";
 
 // Base Classes
 
-const parts: Parts = {
-  component: {},
-};
+export default function SectionLocal(): Section {
+  const parts: Parts = {
+    component: {},
+  };
 
-export default parts;
+  return {
+    parts,
+  };
+}

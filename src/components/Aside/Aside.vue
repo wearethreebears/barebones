@@ -10,7 +10,9 @@ export default { name: "BonesAside" };
 import useComponent from "@barebones/composables/useComponent";
 
 import { classProps } from "@barebones-local/Aside/Aside.classes";
-import parts from "@barebones-local/Aside/Aside";
+import AsideLocal from "@barebones-local/Aside/Aside";
+
+const { parts } = AsideLocal();
 
 const props = defineProps({
   ...classProps,
