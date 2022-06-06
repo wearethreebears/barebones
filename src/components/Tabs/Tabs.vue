@@ -37,8 +37,7 @@
         <div
           :key="tab.key"
           v-if="
-            hiddenTabs == 'rendered' ||
-            (hiddenTabs == 'unrendered' && activeTab == tab.key)
+            renderInactiveTabs || (!renderInactiveTabs && activeTab == tab.key)
           "
           v-show="activeTab == tab.key"
           :aria-hidden="activeTab == tab.key ? 'false' : 'true'"
@@ -79,10 +78,10 @@ const props = defineProps({
     required: true,
     type: Array as PropType<Tab[]>,
   },
-  hiddenTabs: {
+  renderInactiveTabs: {
     required: false,
-    type: String as PropType<"rendered" | "unrendered">,
-    default: "rendered",
+    type: Boolean as PropType<boolean>,
+    default: true,
   },
 });
 
