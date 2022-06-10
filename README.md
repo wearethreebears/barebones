@@ -1,52 +1,37 @@
-# tailwind-components
+# Barebones
 
-This template should help get you started developing with Vue 3 in Vite.
+Barebones (WIP) is a fully customisable component library for Vue 3 and Nuxt 3, configurable through local config. Local config allows for custom props that can be mapped to component parts (elements). Currently Barebones uses Tailwind classes for example purposes but could use plain CSS or any CSS library. Local config files can be seen in `src/local`. Barebones uses aliases to work both in development within this package and within other applications.
 
-## Recommended IDE Setup
+To get a simple understanding of how these files work, see Text or Grid. For more complex components with multiple component parts see Tabs or Modal.
+The fastest way to see the components in action is to run the following commands:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```
+    yarn && yarn dev
 ```
 
-### Compile and Hot-Reload for Development
+You may also add it to a to a Vue 3 or Nuxt 3 via yarn:
 
-```sh
-npm run dev
+```
+   yarn add @wearethreebears/barebones
 ```
 
-### Type-Check, Compile and Minify for Production
+Setting up the following aliases locally:
 
-```sh
-npm run build
+```
+    '@barebones-local': './barebones', // This folder can be called what you like but it must be the name of your local config folder
+    '@barebones': './node_modules/@wearethreebears/barebones/src',
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+And adding the local config from the package to match your `@barebones-local` alias.
 
-```sh
-npm run test:unit
+If you're using Nuxt you can update your buildModules for auto component imports:
+
+```
+buildModules: ['@wearethreebears/barebones/nuxt'],
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+---
 
-```sh
-npm run lint
-```
+Currently no tests are written for this component library and the documentation is a work in progress and there will likely be breaking changes in future versions.
+
+===NOTE: HelloWorld homepage is for display purposes only, excuse the <br />'s and <hr />s===

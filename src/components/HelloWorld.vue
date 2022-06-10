@@ -1,21 +1,39 @@
 <template>
-  <BaseButton design="line">TEST</BaseButton>&nbsp;&nbsp;&nbsp;&nbsp;
-  <BaseButton>TEST</BaseButton>&nbsp;&nbsp;&nbsp;&nbsp;
-  <BaseButton design="default-blue">TEST</BaseButton>&nbsp;&nbsp;&nbsp;&nbsp;
-  <BaseButton design="line-blue">TEST</BaseButton>&nbsp;&nbsp;&nbsp;&nbsp;
+  <BonesButton design="line">TEST</BonesButton>&nbsp;&nbsp;&nbsp;&nbsp;
+  <BonesButton>TEST</BonesButton>&nbsp;&nbsp;&nbsp;&nbsp;
+  <BonesButton design="default-blue">TEST</BonesButton>&nbsp;&nbsp;&nbsp;&nbsp;
+  <BonesButton design="line-blue">TEST</BonesButton>&nbsp;&nbsp;&nbsp;&nbsp;
+  <br />
+  <br />
+  <hr />
+  <br />
+  <br />
+  <BonesButton design="line" to="https://bbc.co.uk">LINK</BonesButton
+  >&nbsp;&nbsp;&nbsp;&nbsp;
+  <br />
+  <br />
+  <hr />
+  <br />
+  <br />
 
-  <BaseText>Hello world</BaseText>
+  <BonesText>Hello world</BonesText>
 
-  <BaseGrid>
-    <BaseColumn :span="['4', 'md-6e']" class="text-white bg-red-500"
-      >Hello world</BaseColumn
+  <br />
+  <br />
+
+  <BonesGrid>
+    <BonesColumn :span="['4', 'md-6e']" class="text-white bg-red-500"
+      >Hello world</BonesColumn
     >
-    <BaseColumn span="6" class="text-white bg-green-500"
-      >Hello world</BaseColumn
+    <BonesColumn span="6" class="text-white bg-green-500"
+      >Hello world</BonesColumn
     >
-  </BaseGrid>
+  </BonesGrid>
 
-  <BaseTabs
+  <br />
+  <br />
+
+  <BonesTabs
     :tabs="[
       {
         key: 'foo',
@@ -29,10 +47,13 @@
   >
     <template #foo>This is Foo</template>
     <template #bar>This is Bar</template>
-  </BaseTabs>
+  </BonesTabs>
+
+  <br />
+  <br />
 
   <div style="width: 200px">
-    <BaseImage
+    <BonesImage
       :image="{
         url: 'https://via.placeholder.com/150',
         width: 150,
@@ -41,18 +62,25 @@
       }"
     />
   </div>
-  <BaseModal :modal-open-props="{ design: 'line-blue' }">
-    <template #title><BaseText tag="span">Hello world</BaseText></template>
-    <BaseText>Hello world from Modal</BaseText>
-  </BaseModal>
+
+  <br />
+  <br />
+
+  <BonesModal :modal-open-props="{ design: 'line-blue' }">
+    <template #title><BonesText tag="span">Hello world</BonesText></template>
+    <BonesText>Hello world from Modal</BonesText>
+  </BonesModal>
+
+  <br />
+  <br />
 </template>
 
 <script setup lang="ts">
-import BaseButton from "./Button/Button.vue";
-import BaseText from "./Text/Text.vue";
-import BaseGrid from "./Grid/Grid.vue";
-import BaseColumn from "./Column/Column.vue";
-import BaseImage from "./Image/Image.vue";
-import BaseTabs from "./Tabs/Tabs.vue";
-import BaseModal from "./Modal/Modal.vue";
+import BonesButton from "./Button/Button.vue";
+import BonesText from "./Text/Text.vue";
+import BonesGrid from "./Grid/Grid.vue";
+import BonesColumn from "./Column/Column.vue";
+import BonesImage from "./Image/Image.vue";
+import BonesTabs from "./Tabs/Tabs.vue";
+import BonesModal from "./Modal/Modal.vue";
 </script>

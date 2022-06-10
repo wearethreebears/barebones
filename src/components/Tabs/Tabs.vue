@@ -92,8 +92,6 @@ const contentItem: Ref<HTMLElement[]> = ref([]);
 
 const { part } = useComponent(parts, props, classProps);
 
-console.log(parts);
-
 const onButtonClick = (key: string) => {
   return (activeTab.value = key);
 };

@@ -7,7 +7,7 @@ export default function ColumnLocal(): Column {
   const parts: Parts = {
     component: {
       span: {
-        default: ["font-col-span-12"],
+        default: ["col-span-12"],
         "1": ["col-span-1"],
         "2": ["col-span-2"],
         "3": ["col-span-3"],
