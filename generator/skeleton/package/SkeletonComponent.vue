@@ -9,8 +9,8 @@ export default { name: "BonesSkeletonComponent" };
 <script setup lang="ts">
 import useComponent from "@barebones/composables/useComponent";
 
-import { classProps } from "@barebones-local/SkeletonComponent/SkeletonComponent.classes";
-import SkeletonComponentLocal from "@barebones-local/SkeletonComponent/SkeletonComponent";
+import { classProps } from "@barebones-local/SkeletonComponent/SkeletonComponent.props";
+import SkeletonComponentLocal from "@barebones-local/SkeletonComponent/SkeletonComponent.parts";
 
 const { parts } = SkeletonComponentLocal();
 

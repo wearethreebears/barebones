@@ -3,13 +3,26 @@
 Barebones (WIP) is a fully customisable component library for Vue 3 and Nuxt 3, configurable through local config. Local config allows for custom props that can be mapped to component parts (elements). Currently Barebones uses Tailwind classes for example purposes but could use plain CSS or any CSS library. Local config files can be seen in `src/local`. Barebones uses aliases to work both in development within this package and within other applications.
 
 To get a simple understanding of how these files work, see Text or Grid. For more complex components with multiple component parts see Tabs or Modal.
-The fastest way to see the components in action is to run the following commands:
+The fastest way to see the components in action is to run the following commands is to clone this package and within the root run the following commands:
 
 ```
     yarn && yarn dev
 ```
 
-You may also add it to a to a Vue 3 or Nuxt 3 via yarn:
+Within this package you can also try the scaffolding tool to create your own components:
+
+```
+    yarn component:build ComponentName  
+```
+
+And remove it with:
+```
+    yarn component:destroy ComponentName  
+```
+
+---
+
+If you'd like to add it to a Nuxt 3 or Vue 3 project there are some extra steps:
 
 ```
    yarn add @wearethreebears/barebones

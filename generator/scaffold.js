@@ -31,8 +31,8 @@ const COMPONENT_PACKAGE_FOLDER = './src/components';
 const COMPONENT_LOCAL_FOLDER = './src/local';
 const COMPONENT_PACKAGE_TYPE_FOLDER = './src/types/components';
 
-const CONFIG_EXTENSION = 'ts';
-const CLASS_EXTENSION = 'classes.ts';
+const CONFIG_EXTENSION = 'props.ts';
+const CLASS_EXTENSION = 'parts.ts';
 const VUE_EXTENSION = 'vue';
 const TYPES_EXTENSION = 'ts';
 
