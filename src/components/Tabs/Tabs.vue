@@ -67,8 +67,8 @@ import type { Tab } from "@barebones/types/tab";
 
 import useComponent from "@barebones/composables/useComponent";
 
-import { classProps } from "@barebones-local/Tabs/Tabs.classes";
-import TabsLocal from "@barebones-local/Tabs/Tabs";
+import { classProps } from "@barebones-local/Tabs/Tabs.props";
+import TabsLocal from "@barebones-local/Tabs/Tabs.parts";
 
 const { parts } = TabsLocal();
 

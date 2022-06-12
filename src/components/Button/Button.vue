@@ -36,8 +36,8 @@ import ButtonLink from "./ButtonLink.vue";
 
 import { BUTTON_STATES } from "@barebones/constants/button";
 
-import classProps from "@barebones-local/Button/Button.classes";
-import ButtonLocal from "@barebones-local/Button/Button";
+import classProps from "@barebones-local/Button/Button.props";
+import ButtonLocal from "@barebones-local/Button/Button.parts";
 
 const { parts } = ButtonLocal();
 

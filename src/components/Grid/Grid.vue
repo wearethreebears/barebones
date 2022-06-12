@@ -17,8 +17,8 @@ import type { Layout } from "@barebones/types/tag";
 
 import useComponent from "@barebones/composables/useComponent";
 
-import { classProps } from "@barebones-local/Grid/Grid.classes";
-import GridLocal from "@barebones-local/Grid/Grid";
+import { classProps } from "@barebones-local/Grid/Grid.props";
+import GridLocal from "@barebones-local/Grid/Grid.parts";
 
 const { parts } = GridLocal();
 

@@ -15,12 +15,6 @@ export default function ButtonLocal(): Button {
         "line-blue": [ComponentDesignLine, "border-blue-500"],
       },
     },
-    text: {
-      design: {
-        default: ["text-white"],
-        "default-blue": ["text-white"],
-      },
-    },
   };
 
   return {

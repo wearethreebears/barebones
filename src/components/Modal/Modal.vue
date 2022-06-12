@@ -26,7 +26,11 @@
       <button
         :class="part['modalClose']"
         @click="toggleModal('default')"
-        v-if="['both', 'default'].includes(props.showCloseButton)"
+        v-if="
+          [CLOSE_BUTTON_DISPLAYS.BOTH, CLOSE_BUTTON_DISPLAYS.MODAL].includes(
+            props.showCloseButton
+          )
+        "
         aria-label="Close modal"
       >
         <slot name="modalClose">Close</slot>
@@ -35,7 +39,11 @@
     <button
       :class="part['overlayClose']"
       @click="toggleModal('default')"
-      v-if="['both', 'overlay'].includes(props.showCloseButton)"
+      v-if="
+        [CLOSE_BUTTON_DISPLAYS.BOTH, CLOSE_BUTTON_DISPLAYS.OVERLAY].includes(
+          props.showCloseButton
+        )
+      "
       aria-label="Close modal"
     >
       <slot name="overlayClose">Close</slot>
@@ -54,19 +62,23 @@ import type { ComputedRef, Ref, PropType } from "vue";
 import BonesOverlay from "@barebones/components/Overlay/Overlay.vue";
 import BonesButton from "@barebones/components/Button/Button.vue";
 
+import { CLOSE_BUTTON_DISPLAYS } from "@barebones/constants/modal";
+
 import useComponent from "@barebones/composables/useComponent";
 import useFocusTrap from "@barebones/composables/useFocusTrap";
 
-import { classProps } from "@barebones-local/Modal/Modal.classes";
-import ModalLocal from "@barebones-local/Modal/Modal";
+import { classProps } from "@barebones-local/Modal/Modal.props";
+import ModalLocal from "@barebones-local/Modal/Modal.parts";
 
 const { parts } = ModalLocal();
 
 const props = defineProps({
   ...classProps,
   showCloseButton: {
-    type: String as PropType<"both" | "none" | "modal" | "overlay">,
-    default: "default",
+    type: String as PropType<
+      typeof CLOSE_BUTTON_DISPLAYS[keyof typeof CLOSE_BUTTON_DISPLAYS]
+    >,
+    default: CLOSE_BUTTON_DISPLAYS.MODAL,
   },
   modalOpenProps: {
     type: Object as PropType<Record<string, string>>,

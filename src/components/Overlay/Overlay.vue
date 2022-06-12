@@ -14,8 +14,8 @@ export default { name: "BonesOverlay" };
 import { watch, toRefs } from "vue";
 import useComponent from "@barebones/composables/useComponent";
 
-import { classProps } from "@barebones-local/Overlay/Overlay.classes";
-import OverlayLocal from "@barebones-local/Overlay/Overlay";
+import { classProps } from "@barebones-local/Overlay/Overlay.props";
+import OverlayLocal from "@barebones-local/Overlay/Overlay.parts";
 
 const { parts } = OverlayLocal();
 

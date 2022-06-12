@@ -30,8 +30,8 @@ import type { Image } from "@barebones/types/image";
 
 import useComponent from "@barebones/composables/useComponent";
 
-import { classProps } from "@barebones-local/Image/Image.classes";
-import ImageLocal from "@barebones-local/Image/Image";
+import { classProps } from "@barebones-local/Image/Image.props";
+import ImageLocal from "@barebones-local/Image/Image.parts";
 
 const { parts, loadingDefault, loadedFalse, loadedTrue } = ImageLocal();
 

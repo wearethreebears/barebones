@@ -12,8 +12,8 @@ import useComponent from "@barebones/composables/useComponent";
 import type { PropType } from "vue";
 import type { Text } from "@barebones/types/tag";
 
-import { classProps } from "@barebones-local/Text/Text.classes";
-import TextLocal from "@barebones-local/Text/Text";
+import { classProps } from "@barebones-local/Text/Text.props";
+import TextLocal from "@barebones-local/Text/Text.parts";
 
 const { parts } = TextLocal();
 

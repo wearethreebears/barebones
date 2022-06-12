@@ -1,5 +1,7 @@
 <template>
-  <div :data-component="$options.name" :class="part['component']"></div>
+  <aside :data-component="$options.name" :class="part['component']">
+    <slot />
+  </aside>
 </template>
 
 <script lang="ts">
@@ -9,8 +11,8 @@ export default { name: "BonesAside" };
 <script setup lang="ts">
 import useComponent from "@barebones/composables/useComponent";
 
-import { classProps } from "@barebones-local/Aside/Aside.classes";
-import AsideLocal from "@barebones-local/Aside/Aside";
+import { classProps } from "@barebones-local/Aside/Aside.props";
+import AsideLocal from "@barebones-local/Aside/Aside.parts";
 
 const { parts } = AsideLocal();
 

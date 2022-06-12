@@ -1,5 +1,5 @@
 <template>
-  <div :data-component="$options.name" :class="part['component']"></div>
+  <section :data-component="$options.name" :class="part['component']"></section>
 </template>
 
 <script lang="ts">
@@ -9,8 +9,8 @@ export default { name: "BonesSection" };
 <script setup lang="ts">
 import useComponent from "@barebones/composables/useComponent";
 
-import { classProps } from "@barebones-local/Section/Section.classes";
-import SectionLocal from "@barebones-local/Section/Section";
+import { classProps } from "@barebones-local/Section/Section.props";
+import SectionLocal from "@barebones-local/Section/Section.parts";
 
 const { parts } = SectionLocal();
 

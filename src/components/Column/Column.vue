@@ -17,8 +17,8 @@ import type { Layout } from "@barebones/types/tag";
 
 import useComponent from "@barebones/composables/useComponent";
 
-import { classProps } from "@barebones-local/Column/Column.classes";
-import ColumnLocal from "@barebones-local/Column/Column";
+import { classProps } from "@barebones-local/Column/Column.props";
+import ColumnLocal from "@barebones-local/Column/Column.parts";
 
 const { parts } = ColumnLocal();
 

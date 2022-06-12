@@ -9,8 +9,8 @@ export default { name: "BonesMain" };
 <script setup lang="ts">
 import useComponent from "@barebones/composables/useComponent";
 
-import { classProps } from "@barebones-local/Main/Main.classes";
-import MainLocal from "@barebones-local/Main/Main";
+import { classProps } from "@barebones-local/Main/Main.props";
+import MainLocal from "@barebones-local/Main/Main.parts";
 
 const { parts } = MainLocal();
 
