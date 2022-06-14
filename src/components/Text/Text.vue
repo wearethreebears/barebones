@@ -1,5 +1,7 @@
 <template>
-  <component :is="tag" :class="part['component']"><slot /></component>
+  <component :is="tag" :class="part['component']" data-part="component"
+    ><slot
+  /></component>
 </template>
 
 <script lang="ts">

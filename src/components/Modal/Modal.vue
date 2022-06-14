@@ -13,11 +13,16 @@
     :state="state"
     @visibility:change="setFocus($event)"
   >
-    <div :data-component="$options.name" :class="part['component']" ref="modal">
+    <div
+      :data-component="$options.name"
+      data-part="component"
+      :class="part['component']"
+      ref="modal"
+    >
       <div id="modal-description" class="sr-only">
         <slot name="SRDescription">This is an open modal window</slot>
       </div>
-      <div :class="part['titleWrapper']">
+      <div :class="part['titleWrapper']" data-part="titleWrapper">
         <h2 id="modal-title" ref="modalTitle" tabindex="0">
           <slot name="title" />
         </h2>
@@ -25,6 +30,7 @@
       <slot />
       <button
         :class="part['modalClose']"
+        data-part="modalClose"
         @click="toggleModal('default')"
         v-if="
           [CLOSE_BUTTON_DISPLAYS.BOTH, CLOSE_BUTTON_DISPLAYS.MODAL].includes(
@@ -38,6 +44,7 @@
     </div>
     <button
       :class="part['overlayClose']"
+      data-part="overlayClose"
       @click="toggleModal('default')"
       v-if="
         [CLOSE_BUTTON_DISPLAYS.BOTH, CLOSE_BUTTON_DISPLAYS.OVERLAY].includes(

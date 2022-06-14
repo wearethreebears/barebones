@@ -1,5 +1,9 @@
 <template>
-  <aside :data-component="$options.name" :class="part['component']">
+  <aside
+    :data-component="$options.name"
+    data-part="component"
+    :class="part['component']"
+  >
     <slot />
   </aside>
 </template>

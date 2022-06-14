@@ -2,6 +2,7 @@
   <div
     :data-component="$options.name"
     :class="part['component']"
+    data-part="component"
     :style="wrapperPadding"
   >
     <picture>
@@ -12,6 +13,7 @@
         :height="props.image.height"
         :width="props.image.width"
         ref="componentImage"
+        data-part="image"
         loading="lazy"
       />
     </picture>

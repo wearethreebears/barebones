@@ -1,5 +1,9 @@
 <template>
-  <main :data-component="$options.name" :class="part['component']"></main>
+  <main
+    :data-component="$options.name"
+    :class="part['component']"
+    data-part="component"
+  ></main>
 </template>
 
 <script lang="ts">

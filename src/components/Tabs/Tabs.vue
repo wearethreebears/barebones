@@ -1,16 +1,22 @@
 <template>
-  <div :data-component="$options.name" :class="part['component']">
+  <div
+    :data-component="$options.name"
+    :class="part['component']"
+    data-part="component"
+  >
     <nav
       tabindex="0"
       ref="navigation"
       data-key="tab-navigation"
       :class="part['navigation']"
+      data-part="navigation"
     >
-      <ul :class="part['navigationList']">
+      <ul :class="part['navigationList']" data-part="navigationList">
         <li
           v-for="(tab, index) in tabs"
           :key="tab.key"
           :class="part['navigationListItem']"
+          data-part="navigationListItem"
         >
           <button
             @click="onButtonClick(tab.key)"
@@ -26,13 +32,19 @@
                 ? part['navigationButtonActive']
                 : part['navigationButton']
             "
+            data-part="navigationButton"
           >
             {{ tab.title }}
           </button>
         </li>
       </ul>
     </nav>
-    <div ref="contentItems" :class="part['contentItems']" tabindex="0">
+    <div
+      ref="contentItems"
+      :class="part['contentItems']"
+      data-part="contentItems"
+      tabindex="0"
+    >
       <template v-for="(tab, index) in tabs">
         <div
           :key="tab.key"
@@ -47,6 +59,7 @@
           role="tabpanel"
           @keydown.shift.tab.exact.self="onPanelKeyDown($event)"
           :class="part['contentItem']"
+          data-part="contentItem"
         >
           <slot :name="`${tab.key}`" />
         </div>

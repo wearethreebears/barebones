@@ -2,6 +2,7 @@
   <component
     :is="tag"
     :data-component="$options.name"
+    data-part="component"
     :class="part['component']"
     ><slot
   /></component>

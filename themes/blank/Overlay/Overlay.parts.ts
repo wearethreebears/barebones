@@ -6,7 +6,7 @@ import type { Overlay } from "@barebones/types/components/Overlay";
 export default function OverlayLocal(): Overlay {
   const parts: Parts = {
     component: {},
-    componentInner: {},
+    overlayInner: {},
   };
 
   return {

@@ -5,5 +5,8 @@
         "activityBar.background": "#0C3603",
         "titleBar.activeBackground": "#114B04",
         "titleBar.activeForeground": "#EEFEEB"
-    }
+    },
+    "cSpell.words": [
+        "happydom"
+    ]
 }

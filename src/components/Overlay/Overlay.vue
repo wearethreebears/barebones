@@ -1,6 +1,14 @@
 <template>
-  <div :data-component="$options.name" :class="part['component']">
-    <div :class="part['componentInner']">
+  <div
+    :data-component="$options.name"
+    :class="part['component']"
+    data-part="component"
+  >
+    <div
+      data-overlay-inner
+      :class="part['overlayInner']"
+      data-part="overlayInner"
+    >
       <slot />
     </div>
   </div>

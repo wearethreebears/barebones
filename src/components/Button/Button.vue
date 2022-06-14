@@ -2,6 +2,7 @@
   <component
     ref="button"
     :data-component="$options.name"
+    data-part="component"
     :is="component"
     :to="props.to"
     :class="part.component"
