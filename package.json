@@ -1,6 +1,9 @@
 {
   "name": "@wearethreebears/barebones",
-  "version": "0.3.0",
+  "version": "0.3.1",
+  "bin": {
+    "multiply": "bin/index.js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
