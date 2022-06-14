@@ -1,5 +1,10 @@
 # Change log
 
+## [0.3.2](https://github.com/vuejs/core/compare/v0.3.2...v0.3.1) (2022-06-14)
+
+### Bugfix
+- Fix NPX working directory path
+
 ## [0.3.1](https://github.com/vuejs/core/compare/v0.3.1...v0.3.0) (2022-06-14)
 
 ### Features

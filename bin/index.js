@@ -1,9 +1,9 @@
 #! /usr/bin/env node
 const fse = require('fs-extra');
-const args = process.argv.slice(2);
+const args = process.argv.slice(3);
 
-const srcDir = `../themes/${args}`;
-const destDir = `../../../../barebones`;
+const srcDir = `${__dirname}/../themes/${args}`;
+const destDir = `./barebones`;
 
 fse.copySync(srcDir, destDir, {
     overwrite: false
