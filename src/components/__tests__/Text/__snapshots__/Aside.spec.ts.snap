@@ -11,12 +11,10 @@ VueWrapper {
       data-v-app=""
     >
       <aside
-        class="p-4"
+        class=""
         data-component="BonesAside"
-        data-part="component"
       >
         
-        Hello world
         
       </aside>
     </div>,
@@ -178,10 +176,7 @@ VueWrapper {
         "__v_skip": true,
         "anchor": null,
         "appContext": null,
-        "children": {
-          "_ctx": [Circular],
-          "default": [Function],
-        },
+        "children": null,
         "component": {
           "a": null,
           "accessCache": {},
@@ -225,9 +220,7 @@ VueWrapper {
           "bum": null,
           "c": null,
           "components": {},
-          "ctx": {
-            "padding": "default",
-          },
+          "ctx": {},
           "da": null,
           "data": {},
           "devtoolsRawSetupState": {
@@ -237,11 +230,7 @@ VueWrapper {
               "_cacheable": true,
               "_dirty": false,
               "_setter": [Function],
-              "_value": {
-                "component": [
-                  "p-4",
-                ],
-              },
+              "_value": {},
               "dep": Set {
                 ReactiveEffect {
                   "active": true,
@@ -259,28 +248,16 @@ VueWrapper {
               "effect": ReactiveEffect {
                 "active": true,
                 "computed": [Circular],
-                "deps": [
-                  Set {
-                    [Circular],
-                  },
-                ],
+                "deps": [],
                 "fn": [Function],
                 "parent": undefined,
                 "scheduler": [Function],
               },
             },
             "parts": {
-              "component": {
-                "padding": {
-                  "default": [
-                    "p-4",
-                  ],
-                },
-              },
+              "component": {},
             },
-            "props": {
-              "padding": "default",
-            },
+            "props": {},
           },
           "directives": null,
           "ec": null,
@@ -314,30 +291,14 @@ VueWrapper {
           "m": null,
           "next": null,
           "parent": [Circular],
-          "props": {
-            "padding": "default",
-          },
+          "props": {},
           "propsDefaults": {},
           "propsOptions": [
-            {
-              "padding": {
-                "0": false,
-                "1": true,
-                "default": "default",
-                "type": [
-                  [Function],
-                  [Function],
-                ],
-              },
-            },
-            [
-              "padding",
-            ],
+            {},
+            [],
           ],
           "provides": {},
-          "proxy": {
-            "padding": "default",
-          },
+          "proxy": {},
           "refs": {},
           "render": [Function],
           "renderCache": [],
@@ -356,11 +317,7 @@ VueWrapper {
                   "_cacheable": true,
                   "_dirty": false,
                   "_setter": [Function],
-                  "_value": {
-                    "component": [
-                      "p-4",
-                    ],
-                  },
+                  "_value": {},
                   "dep": Set {
                     ReactiveEffect {
                       "active": true,
@@ -377,11 +334,7 @@ VueWrapper {
                   },
                   "effect": [Circular],
                 },
-                "deps": [
-                  Set {
-                    [Circular],
-                  },
-                ],
+                "deps": [],
                 "fn": [Function],
                 "parent": undefined,
                 "scheduler": [Function],
@@ -406,32 +359,16 @@ VueWrapper {
             "attrs": {},
             "emit": [Function],
             "expose": [Function],
-            "slots": {
-              "default": [Function],
-            },
+            "slots": {},
           },
           "setupState": {
-            "part": {
-              "component": [
-                "p-4",
-              ],
-            },
+            "part": {},
             "parts": {
-              "component": {
-                "padding": {
-                  "default": [
-                    "p-4",
-                  ],
-                },
-              },
+              "component": {},
             },
-            "props": {
-              "padding": "default",
-            },
+            "props": {},
           },
-          "slots": {
-            "default": [Function],
-          },
+          "slots": {},
           "sp": null,
           "subTree": {
             "__v_isVNode": true,
@@ -444,35 +381,7 @@ VueWrapper {
                 "__v_skip": true,
                 "anchor": ,
                 "appContext": null,
-                "children": [
-                  {
-                    "__v_isVNode": true,
-                    "__v_skip": true,
-                    "anchor": null,
-                    "appContext": null,
-                    "children": "Hello world",
-                    "component": null,
-                    "dirs": null,
-                    "dynamicChildren": null,
-                    "dynamicProps": null,
-                    "el": Hello world,
-                    "key": null,
-                    "patchFlag": 0,
-                    "props": null,
-                    "ref": null,
-                    "scopeId": null,
-                    "shapeFlag": 8,
-                    "slotScopeIds": null,
-                    "ssContent": null,
-                    "ssFallback": null,
-                    "staticCount": 0,
-                    "suspense": null,
-                    "target": null,
-                    "targetAnchor": null,
-                    "transition": null,
-                    "type": Symbol(Text),
-                  },
-                ],
+                "children": [],
                 "component": null,
                 "dirs": null,
                 "dynamicChildren": null,
@@ -505,35 +414,7 @@ VueWrapper {
                 "__v_skip": true,
                 "anchor": ,
                 "appContext": null,
-                "children": [
-                  {
-                    "__v_isVNode": true,
-                    "__v_skip": true,
-                    "anchor": null,
-                    "appContext": null,
-                    "children": "Hello world",
-                    "component": null,
-                    "dirs": null,
-                    "dynamicChildren": null,
-                    "dynamicProps": null,
-                    "el": Hello world,
-                    "key": null,
-                    "patchFlag": 0,
-                    "props": null,
-                    "ref": null,
-                    "scopeId": null,
-                    "shapeFlag": 8,
-                    "slotScopeIds": null,
-                    "ssContent": null,
-                    "ssFallback": null,
-                    "staticCount": 0,
-                    "suspense": null,
-                    "target": null,
-                    "targetAnchor": null,
-                    "transition": null,
-                    "type": Symbol(Text),
-                  },
-                ],
+                "children": [],
                 "component": null,
                 "dirs": null,
                 "dynamicChildren": null,
@@ -562,20 +443,17 @@ VueWrapper {
               "data-component",
             ],
             "el": <aside
-              class="p-4"
+              class=""
               data-component="BonesAside"
-              data-part="component"
             >
               
-              Hello world
               
             </aside>,
             "key": null,
             "patchFlag": 10,
             "props": {
-              "class": "p-4",
+              "class": "",
               "data-component": "BonesAside",
-              "data-part": "component",
             },
             "ref": null,
             "scopeId": null,
@@ -597,22 +475,12 @@ VueWrapper {
             "__hmrId": "d7a3a9fe",
             "components": {},
             "name": "BonesAside",
-            "props": {
-              "padding": {
-                "0": false,
-                "1": true,
-                "default": "default",
-                "type": [
-                  [Function],
-                  [Function],
-                ],
-              },
-            },
+            "props": {},
             "render": [Function],
             "setup": [Function],
           },
           "u": null,
-          "uid": 3,
+          "uid": 1,
           "um": null,
           "update": [Function],
           "vnode": [Circular],
@@ -622,12 +490,10 @@ VueWrapper {
         "dynamicChildren": null,
         "dynamicProps": null,
         "el": <aside
-          class="p-4"
+          class=""
           data-component="BonesAside"
-          data-part="component"
         >
           
-          Hello world
           
         </aside>,
         "key": null,
@@ -642,7 +508,7 @@ VueWrapper {
           "r": "VTU_COMPONENT",
         },
         "scopeId": null,
-        "shapeFlag": 36,
+        "shapeFlag": 4,
         "slotScopeIds": null,
         "ssContent": null,
         "ssFallback": null,
@@ -656,17 +522,7 @@ VueWrapper {
           "__hmrId": "d7a3a9fe",
           "components": {},
           "name": "BonesAside",
-          "props": {
-            "padding": {
-              "0": false,
-              "1": true,
-              "default": "default",
-              "type": [
-                [Function],
-                [Function],
-              ],
-            },
-          },
+          "props": {},
           "render": [Function],
           "setup": [Function],
         },
@@ -678,7 +534,7 @@ VueWrapper {
         "render": [Function],
       },
       "u": null,
-      "uid": 2,
+      "uid": 0,
       "um": null,
       "update": [Function],
       "vnode": {
@@ -722,12 +578,10 @@ VueWrapper {
         "dynamicChildren": null,
         "dynamicProps": null,
         "el": <aside
-          class="p-4"
+          class=""
           data-component="BonesAside"
-          data-part="component"
         >
           
-          Hello world
           
         </aside>,
         "key": null,
@@ -752,7 +606,7 @@ VueWrapper {
       "withProxy": null,
     },
     "_props": null,
-    "_uid": 1,
+    "_uid": 0,
     "component": [Function],
     "config": {
       "compilerOptions": {},
@@ -772,18 +626,14 @@ VueWrapper {
     "version": "3.2.33",
   },
   "__setProps": [Function],
-  "componentVM": {
-    "padding": "default",
-  },
+  "componentVM": {},
   "isDisabled": [Function],
   "rootVM": {},
   "wrapperElement": <aside
-    class="p-4"
+    class=""
     data-component="BonesAside"
-    data-part="component"
   >
     
-    Hello world
     
   </aside>,
 }

@@ -5,11 +5,7 @@ import type { Main } from "@barebones/types/components/Main";
 
 export default function MainLocal(): Main {
   const parts: Parts = {
-    component: {
-      padding: {
-        default: ["p-4"],
-      },
-    },
+    component: {},
   };
 
   return {

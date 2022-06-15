@@ -3,7 +3,9 @@
     :data-component="$options.name"
     :class="part['component']"
     data-part="component"
-  ></main>
+  >
+    <slot />
+  </main>
 </template>
 
 <script lang="ts">

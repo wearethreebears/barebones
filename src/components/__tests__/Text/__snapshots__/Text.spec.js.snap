@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`Aside > renders properly 1`] = `
+exports[`Text > renders properly 1`] = `
 VueWrapper {
   "__app": {
     "_component": {
@@ -10,15 +10,14 @@ VueWrapper {
     "_container": <div
       data-v-app=""
     >
-      <aside
-        class="p-4"
-        data-component="BonesAside"
+      <p
+        class="font-sans text-slate-500"
         data-part="component"
       >
         
         Hello world
         
-      </aside>
+      </p>
     </div>,
     "_context": {
       "app": [Circular],
@@ -226,7 +225,9 @@ VueWrapper {
           "c": null,
           "components": {},
           "ctx": {
-            "padding": "default",
+            "color": "default",
+            "style": "default",
+            "tag": "p",
           },
           "da": null,
           "data": {},
@@ -239,7 +240,8 @@ VueWrapper {
               "_setter": [Function],
               "_value": {
                 "component": [
-                  "p-4",
+                  "font-sans",
+                  "text-slate-500",
                 ],
               },
               "dep": Set {
@@ -247,6 +249,9 @@ VueWrapper {
                   "active": true,
                   "allowRecurse": true,
                   "deps": [
+                    Set {
+                      [Circular],
+                    },
                     [Circular],
                   ],
                   "fn": [Function],
@@ -263,6 +268,9 @@ VueWrapper {
                   Set {
                     [Circular],
                   },
+                  Set {
+                    [Circular],
+                  },
                 ],
                 "fn": [Function],
                 "parent": undefined,
@@ -271,15 +279,22 @@ VueWrapper {
             },
             "parts": {
               "component": {
-                "padding": {
+                "color": {
                   "default": [
-                    "p-4",
+                    "text-slate-500",
+                  ],
+                },
+                "style": {
+                  "default": [
+                    "font-sans",
                   ],
                 },
               },
             },
             "props": {
-              "padding": "default",
+              "color": "default",
+              "style": "default",
+              "tag": "p",
             },
           },
           "directives": null,
@@ -288,6 +303,9 @@ VueWrapper {
             "active": true,
             "allowRecurse": true,
             "deps": [
+              Set {
+                [Circular],
+              },
               Set {
                 [Circular],
               },
@@ -315,28 +333,44 @@ VueWrapper {
           "next": null,
           "parent": [Circular],
           "props": {
-            "padding": "default",
+            "color": "default",
+            "style": "default",
+            "tag": "p",
           },
           "propsDefaults": {},
           "propsOptions": [
             {
-              "padding": {
+              "color": {
                 "0": false,
                 "1": true,
                 "default": "default",
-                "type": [
-                  [Function],
-                  [Function],
-                ],
+                "type": [Function],
+              },
+              "style": {
+                "0": false,
+                "1": true,
+                "default": "default",
+                "type": [Function],
+              },
+              "tag": {
+                "0": false,
+                "1": true,
+                "default": "p",
+                "required": false,
+                "type": [Function],
               },
             },
             [
-              "padding",
+              "style",
+              "color",
+              "tag",
             ],
           ],
           "provides": {},
           "proxy": {
-            "padding": "default",
+            "color": "default",
+            "style": "default",
+            "tag": "p",
           },
           "refs": {},
           "render": [Function],
@@ -358,7 +392,8 @@ VueWrapper {
                   "_setter": [Function],
                   "_value": {
                     "component": [
-                      "p-4",
+                      "font-sans",
+                      "text-slate-500",
                     ],
                   },
                   "dep": Set {
@@ -366,6 +401,9 @@ VueWrapper {
                       "active": true,
                       "allowRecurse": true,
                       "deps": [
+                        Set {
+                          [Circular],
+                        },
                         [Circular],
                       ],
                       "fn": [Function],
@@ -381,6 +419,9 @@ VueWrapper {
                   Set {
                     [Circular],
                   },
+                  Set {
+                    [Circular],
+                  },
                 ],
                 "fn": [Function],
                 "parent": undefined,
@@ -390,6 +431,9 @@ VueWrapper {
                 "active": true,
                 "allowRecurse": true,
                 "deps": [
+                  Set {
+                    [Circular],
+                  },
                   Set {
                     [Circular],
                   },
@@ -413,20 +457,28 @@ VueWrapper {
           "setupState": {
             "part": {
               "component": [
-                "p-4",
+                "font-sans",
+                "text-slate-500",
               ],
             },
             "parts": {
               "component": {
-                "padding": {
+                "color": {
                   "default": [
-                    "p-4",
+                    "text-slate-500",
+                  ],
+                },
+                "style": {
+                  "default": [
+                    "font-sans",
                   ],
                 },
               },
             },
             "props": {
-              "padding": "default",
+              "color": "default",
+              "style": "default",
+              "tag": "p",
             },
           },
           "slots": {
@@ -559,22 +611,20 @@ VueWrapper {
               },
             ],
             "dynamicProps": [
-              "data-component",
+              "class",
             ],
-            "el": <aside
-              class="p-4"
-              data-component="BonesAside"
+            "el": <p
+              class="font-sans text-slate-500"
               data-part="component"
             >
               
               Hello world
               
-            </aside>,
+            </p>,
             "key": null,
-            "patchFlag": 10,
+            "patchFlag": 8,
             "props": {
-              "class": "p-4",
-              "data-component": "BonesAside",
+              "class": "font-sans text-slate-500",
               "data-part": "component",
             },
             "ref": null,
@@ -588,31 +638,41 @@ VueWrapper {
             "target": null,
             "targetAnchor": null,
             "transition": null,
-            "type": "aside",
+            "type": "p",
           },
           "suspense": null,
           "suspenseId": 0,
           "type": {
-            "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/Aside/Aside.vue",
-            "__hmrId": "d7a3a9fe",
+            "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/Text/Text.vue",
+            "__hmrId": "6dc3e16f",
             "components": {},
-            "name": "BonesAside",
+            "name": "BonesText",
             "props": {
-              "padding": {
+              "color": {
                 "0": false,
                 "1": true,
                 "default": "default",
-                "type": [
-                  [Function],
-                  [Function],
-                ],
+                "type": [Function],
+              },
+              "style": {
+                "0": false,
+                "1": true,
+                "default": "default",
+                "type": [Function],
+              },
+              "tag": {
+                "0": false,
+                "1": true,
+                "default": "p",
+                "required": false,
+                "type": [Function],
               },
             },
             "render": [Function],
             "setup": [Function],
           },
           "u": null,
-          "uid": 3,
+          "uid": 5,
           "um": null,
           "update": [Function],
           "vnode": [Circular],
@@ -621,15 +681,14 @@ VueWrapper {
         "dirs": null,
         "dynamicChildren": null,
         "dynamicProps": null,
-        "el": <aside
-          class="p-4"
-          data-component="BonesAside"
+        "el": <p
+          class="font-sans text-slate-500"
           data-part="component"
         >
           
           Hello world
           
-        </aside>,
+        </p>,
         "key": null,
         "patchFlag": 0,
         "props": {
@@ -652,19 +711,29 @@ VueWrapper {
         "targetAnchor": null,
         "transition": null,
         "type": {
-          "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/Aside/Aside.vue",
-          "__hmrId": "d7a3a9fe",
+          "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/Text/Text.vue",
+          "__hmrId": "6dc3e16f",
           "components": {},
-          "name": "BonesAside",
+          "name": "BonesText",
           "props": {
-            "padding": {
+            "color": {
               "0": false,
               "1": true,
               "default": "default",
-              "type": [
-                [Function],
-                [Function],
-              ],
+              "type": [Function],
+            },
+            "style": {
+              "0": false,
+              "1": true,
+              "default": "default",
+              "type": [Function],
+            },
+            "tag": {
+              "0": false,
+              "1": true,
+              "default": "p",
+              "required": false,
+              "type": [Function],
             },
           },
           "render": [Function],
@@ -678,7 +747,7 @@ VueWrapper {
         "render": [Function],
       },
       "u": null,
-      "uid": 2,
+      "uid": 4,
       "um": null,
       "update": [Function],
       "vnode": {
@@ -721,15 +790,14 @@ VueWrapper {
         "dirs": null,
         "dynamicChildren": null,
         "dynamicProps": null,
-        "el": <aside
-          class="p-4"
-          data-component="BonesAside"
+        "el": <p
+          class="font-sans text-slate-500"
           data-part="component"
         >
           
           Hello world
           
-        </aside>,
+        </p>,
         "key": null,
         "patchFlag": 0,
         "props": null,
@@ -752,7 +820,7 @@ VueWrapper {
       "withProxy": null,
     },
     "_props": null,
-    "_uid": 1,
+    "_uid": 2,
     "component": [Function],
     "config": {
       "compilerOptions": {},
@@ -773,18 +841,19 @@ VueWrapper {
   },
   "__setProps": [Function],
   "componentVM": {
-    "padding": "default",
+    "color": "default",
+    "style": "default",
+    "tag": "p",
   },
   "isDisabled": [Function],
   "rootVM": {},
-  "wrapperElement": <aside
-    class="p-4"
-    data-component="BonesAside"
+  "wrapperElement": <p
+    class="font-sans text-slate-500"
     data-part="component"
   >
     
     Hello world
     
-  </aside>,
+  </p>,
 }
 `;

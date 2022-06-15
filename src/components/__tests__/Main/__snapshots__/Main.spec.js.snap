@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`Aside > renders properly 1`] = `
+exports[`Main > renders properly 1`] = `
 VueWrapper {
   "__app": {
     "_component": {
@@ -10,15 +10,15 @@ VueWrapper {
     "_container": <div
       data-v-app=""
     >
-      <aside
+      <main
         class="p-4"
-        data-component="BonesAside"
+        data-component="BonesMain"
         data-part="component"
       >
         
         Hello world
         
-      </aside>
+      </main>
     </div>,
     "_context": {
       "app": [Circular],
@@ -561,20 +561,20 @@ VueWrapper {
             "dynamicProps": [
               "data-component",
             ],
-            "el": <aside
+            "el": <main
               class="p-4"
-              data-component="BonesAside"
+              data-component="BonesMain"
               data-part="component"
             >
               
               Hello world
               
-            </aside>,
+            </main>,
             "key": null,
             "patchFlag": 10,
             "props": {
               "class": "p-4",
-              "data-component": "BonesAside",
+              "data-component": "BonesMain",
               "data-part": "component",
             },
             "ref": null,
@@ -588,15 +588,15 @@ VueWrapper {
             "target": null,
             "targetAnchor": null,
             "transition": null,
-            "type": "aside",
+            "type": "main",
           },
           "suspense": null,
           "suspenseId": 0,
           "type": {
-            "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/Aside/Aside.vue",
-            "__hmrId": "d7a3a9fe",
+            "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/Main/Main.vue",
+            "__hmrId": "dccace22",
             "components": {},
-            "name": "BonesAside",
+            "name": "BonesMain",
             "props": {
               "padding": {
                 "0": false,
@@ -621,15 +621,15 @@ VueWrapper {
         "dirs": null,
         "dynamicChildren": null,
         "dynamicProps": null,
-        "el": <aside
+        "el": <main
           class="p-4"
-          data-component="BonesAside"
+          data-component="BonesMain"
           data-part="component"
         >
           
           Hello world
           
-        </aside>,
+        </main>,
         "key": null,
         "patchFlag": 0,
         "props": {
@@ -652,10 +652,10 @@ VueWrapper {
         "targetAnchor": null,
         "transition": null,
         "type": {
-          "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/Aside/Aside.vue",
-          "__hmrId": "d7a3a9fe",
+          "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/Main/Main.vue",
+          "__hmrId": "dccace22",
           "components": {},
-          "name": "BonesAside",
+          "name": "BonesMain",
           "props": {
             "padding": {
               "0": false,
@@ -721,15 +721,15 @@ VueWrapper {
         "dirs": null,
         "dynamicChildren": null,
         "dynamicProps": null,
-        "el": <aside
+        "el": <main
           class="p-4"
-          data-component="BonesAside"
+          data-component="BonesMain"
           data-part="component"
         >
           
           Hello world
           
-        </aside>,
+        </main>,
         "key": null,
         "patchFlag": 0,
         "props": null,
@@ -777,14 +777,14 @@ VueWrapper {
   },
   "isDisabled": [Function],
   "rootVM": {},
-  "wrapperElement": <aside
+  "wrapperElement": <main
     class="p-4"
-    data-component="BonesAside"
+    data-component="BonesMain"
     data-part="component"
   >
     
     Hello world
     
-  </aside>,
+  </main>,
 }
 `;

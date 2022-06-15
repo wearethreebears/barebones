@@ -16,7 +16,7 @@ VueWrapper {
         data-part="component"
       >
         <div
-          class=""
+          class="w-full h-full flex justify-center items-start overflow-y-auto relative"
           data-overlay-inner=""
           data-part="overlayInner"
         >
@@ -252,7 +252,7 @@ VueWrapper {
                   "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
                   "bg-slate-500",
                 ],
-                "componentInner": [
+                "overlayInner": [
                   "w-full h-full flex justify-center items-start overflow-y-auto relative",
                 ],
               },
@@ -316,7 +316,7 @@ VueWrapper {
                   ],
                 },
               },
-              "componentInner": {
+              "overlayInner": {
                 "color": {
                   "default": [
                     "w-full h-full flex justify-center items-start overflow-y-auto relative",
@@ -427,7 +427,7 @@ VueWrapper {
                       "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
                       "bg-slate-500",
                     ],
-                    "componentInner": [
+                    "overlayInner": [
                       "w-full h-full flex justify-center items-start overflow-y-auto relative",
                     ],
                   },
@@ -490,7 +490,7 @@ VueWrapper {
                             "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
                             "bg-slate-500",
                           ],
-                          "componentInner": [
+                          "overlayInner": [
                             "w-full h-full flex justify-center items-start overflow-y-auto relative",
                           ],
                         },
@@ -561,7 +561,7 @@ VueWrapper {
                 "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
                 "bg-slate-500",
               ],
-              "componentInner": [
+              "overlayInner": [
                 "w-full h-full flex justify-center items-start overflow-y-auto relative",
               ],
             },
@@ -584,7 +584,7 @@ VueWrapper {
                   ],
                 },
               },
-              "componentInner": {
+              "overlayInner": {
                 "color": {
                   "default": [
                     "w-full h-full flex justify-center items-start overflow-y-auto relative",
@@ -677,7 +677,7 @@ VueWrapper {
                 "dynamicChildren": null,
                 "dynamicProps": null,
                 "el": <div
-                  class=""
+                  class="w-full h-full flex justify-center items-start overflow-y-auto relative"
                   data-overlay-inner=""
                   data-part="overlayInner"
                 >
@@ -688,7 +688,7 @@ VueWrapper {
                 "key": null,
                 "patchFlag": 2,
                 "props": {
-                  "class": "",
+                  "class": "w-full h-full flex justify-center items-start overflow-y-auto relative",
                   "data-overlay-inner": "",
                   "data-part": "overlayInner",
                 },
@@ -835,7 +835,7 @@ VueWrapper {
                 "dynamicChildren": null,
                 "dynamicProps": null,
                 "el": <div
-                  class=""
+                  class="w-full h-full flex justify-center items-start overflow-y-auto relative"
                   data-overlay-inner=""
                   data-part="overlayInner"
                 >
@@ -846,7 +846,7 @@ VueWrapper {
                 "key": null,
                 "patchFlag": 2,
                 "props": {
-                  "class": "",
+                  "class": "w-full h-full flex justify-center items-start overflow-y-auto relative",
                   "data-overlay-inner": "",
                   "data-part": "overlayInner",
                 },
@@ -873,7 +873,7 @@ VueWrapper {
               data-part="component"
             >
               <div
-                class=""
+                class="w-full h-full flex justify-center items-start overflow-y-auto relative"
                 data-overlay-inner=""
                 data-part="overlayInner"
               >
@@ -930,7 +930,7 @@ VueWrapper {
             "setup": [Function],
           },
           "u": null,
-          "uid": 1,
+          "uid": 9,
           "um": null,
           "update": [Function],
           "vnode": [Circular],
@@ -945,7 +945,7 @@ VueWrapper {
           data-part="component"
         >
           <div
-            class=""
+            class="w-full h-full flex justify-center items-start overflow-y-auto relative"
             data-overlay-inner=""
             data-part="overlayInner"
           >
@@ -1008,7 +1008,7 @@ VueWrapper {
         "render": [Function],
       },
       "u": null,
-      "uid": 0,
+      "uid": 8,
       "um": null,
       "update": [Function],
       "vnode": {
@@ -1057,7 +1057,7 @@ VueWrapper {
           data-part="component"
         >
           <div
-            class=""
+            class="w-full h-full flex justify-center items-start overflow-y-auto relative"
             data-overlay-inner=""
             data-part="overlayInner"
           >
@@ -1088,7 +1088,7 @@ VueWrapper {
       "withProxy": null,
     },
     "_props": null,
-    "_uid": 0,
+    "_uid": 4,
     "component": [Function],
     "config": {
       "compilerOptions": {},
@@ -1120,7 +1120,7 @@ VueWrapper {
     data-part="component"
   >
     <div
-      class=""
+      class="w-full h-full flex justify-center items-start overflow-y-auto relative"
       data-overlay-inner=""
       data-part="overlayInner"
     >

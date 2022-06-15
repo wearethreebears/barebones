@@ -5,11 +5,7 @@ import type { Section } from "@barebones/types/components/Section";
 
 export default function SectionLocal(): Section {
   const parts: Parts = {
-    component: {
-      padding: {
-        default: ["p-4"],
-      },
-    },
+    component: {},
   };
 
   return {

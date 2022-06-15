@@ -5,11 +5,7 @@ import type { Aside } from "@barebones/types/components/Aside";
 
 export default function AsideLocal(): Aside {
   const parts: Parts = {
-    component: {
-      padding: {
-        default: ["p-4"],
-      },
-    },
+    component: {},
   };
 
   return {

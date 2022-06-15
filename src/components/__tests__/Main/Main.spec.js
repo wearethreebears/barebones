@@ -2,20 +2,20 @@ import { describe, it, expect, beforeEach } from "vitest";
 
 import { mount } from "@vue/test-utils";
 import { allComponentPartClassesToDisplayCorrectly } from "@barebones/components/__tests__/helpers";
-import Aside from "@barebones/components/Aside/Aside.vue";
+import Main from "@barebones/components/Main/Main.vue";
 
-import AsideLocal from "@barebones-local/Aside/Aside.parts";
-const { parts } = AsideLocal();
+import MainLocal from "@barebones-local/Main/Main.parts";
+const { parts } = MainLocal();
 
 
 const defaultSlot = "Hello world";
 
-allComponentPartClassesToDisplayCorrectly(Aside, parts);
+allComponentPartClassesToDisplayCorrectly(Main, parts);
 
-describe("Aside", () => {
+describe("Main", () => {
   let wrapper;
   beforeEach(async () => {
-    wrapper = mount(Aside, {
+    wrapper = mount(Main, {
       slots: {
         default: defaultSlot
       }
