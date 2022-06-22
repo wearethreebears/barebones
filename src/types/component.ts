@@ -9,3 +9,7 @@ export interface Part {
 export interface Parts {
   [key: string]: Part;
 }
+
+export interface DynamicParts {
+  [key: string]: Parts;
+}

@@ -90,6 +90,7 @@ const props = defineProps({
   tabs: {
     required: true,
     type: Array as PropType<Tab[]>,
+    default: [], // @todo: Remove when resolved - Tests fail when there's not default
   },
   renderInactiveTabs: {
     required: false,
@@ -152,6 +153,6 @@ const onPanelKeyDown = (event: KeyboardEvent): void => {
 };
 
 onMounted(() => {
-  activeTab.value = props.tabs[0].key;
+  activeTab.value = props.tabs[0]?.key;
 });
 </script>

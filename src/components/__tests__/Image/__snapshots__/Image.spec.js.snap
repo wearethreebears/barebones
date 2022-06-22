@@ -1,0 +1,1078 @@
+// Vitest Snapshot v1
+
+exports[`Image > renders properly 1`] = `
+VueWrapper {
+  "__app": {
+    "_component": {
+      "name": "VTU_ROOT",
+      "render": [Function],
+    },
+    "_container": <div
+      data-v-app=""
+    >
+      <div
+        class=""
+        data-component="BonesImage"
+        data-part="component"
+        style="padding-top: 50%;"
+      >
+        <picture>
+          <img
+            alt="Alt text"
+            class="w-full transition-opacity duration-300 opacity-0"
+            data-part="image"
+            height="200"
+            loading="lazy"
+            src="/image.png"
+            width="400"
+          />
+        </picture>
+      </div>
+    </div>,
+    "_context": {
+      "app": [Circular],
+      "components": {
+        "transition": {
+          "name": "transition",
+        },
+        "transition-group": {
+          "name": "transition-group",
+        },
+      },
+      "config": {
+        "compilerOptions": {},
+        "errorHandler": undefined,
+        "globalProperties": {},
+        "isNativeTag": [Function],
+        "optionMergeStrategies": {},
+        "performance": false,
+        "warnHandler": undefined,
+      },
+      "directives": {},
+      "emitsCache": WeakMap {},
+      "mixins": [
+        {
+          "beforeCreate": [Function],
+        },
+      ],
+      "optionsCache": WeakMap {},
+      "propsCache": WeakMap {},
+      "provides": {},
+      "reload": [Function],
+    },
+    "_instance": {
+      "a": null,
+      "accessCache": {},
+      "appContext": {
+        "app": [Circular],
+        "components": {
+          "transition": {
+            "name": "transition",
+          },
+          "transition-group": {
+            "name": "transition-group",
+          },
+        },
+        "config": {
+          "compilerOptions": {},
+          "errorHandler": undefined,
+          "globalProperties": {},
+          "isNativeTag": [Function],
+          "optionMergeStrategies": {},
+          "performance": false,
+          "warnHandler": undefined,
+        },
+        "directives": {},
+        "emitsCache": WeakMap {},
+        "mixins": [
+          {
+            "beforeCreate": [Function],
+          },
+        ],
+        "optionsCache": WeakMap {},
+        "propsCache": WeakMap {},
+        "provides": {},
+        "reload": [Function],
+      },
+      "asyncDep": null,
+      "asyncResolved": false,
+      "attrs": {},
+      "bc": null,
+      "bm": null,
+      "bu": null,
+      "bum": null,
+      "c": null,
+      "components": null,
+      "ctx": {},
+      "da": null,
+      "data": {},
+      "directives": null,
+      "ec": null,
+      "effect": ReactiveEffect {
+        "active": true,
+        "allowRecurse": true,
+        "deps": [
+          Set {
+            [Circular],
+          },
+          Set {
+            [Circular],
+          },
+          Set {
+            [Circular],
+          },
+        ],
+        "fn": [Function],
+        "onTrack": undefined,
+        "onTrigger": undefined,
+        "parent": undefined,
+        "scheduler": [Function],
+      },
+      "emit": [Function],
+      "emitsOptions": null,
+      "emitted": null,
+      "exposeProxy": null,
+      "exposed": null,
+      "inheritAttrs": undefined,
+      "isDeactivated": false,
+      "isMounted": true,
+      "isUnmounted": false,
+      "m": null,
+      "next": null,
+      "parent": null,
+      "props": {},
+      "propsDefaults": {},
+      "propsOptions": [
+        {},
+        [],
+      ],
+      "provides": {},
+      "proxy": {},
+      "refs": {
+        "VTU_COMPONENT": {
+          "hasOwnProperty": [Function],
+        },
+      },
+      "render": [Function],
+      "renderCache": [],
+      "root": [Circular],
+      "rtc": null,
+      "rtg": null,
+      "scope": EffectScope {
+        "active": true,
+        "cleanups": [],
+        "effects": [
+          ReactiveEffect {
+            "active": true,
+            "allowRecurse": true,
+            "deps": [
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+            ],
+            "fn": [Function],
+            "onTrack": undefined,
+            "onTrigger": undefined,
+            "parent": undefined,
+            "scheduler": [Function],
+          },
+        ],
+      },
+      "setupContext": null,
+      "setupState": {},
+      "slots": {},
+      "sp": null,
+      "subTree": {
+        "__v_isVNode": true,
+        "__v_skip": true,
+        "anchor": null,
+        "appContext": null,
+        "children": null,
+        "component": {
+          "a": null,
+          "accessCache": {},
+          "appContext": {
+            "app": [Circular],
+            "components": {
+              "transition": {
+                "name": "transition",
+              },
+              "transition-group": {
+                "name": "transition-group",
+              },
+            },
+            "config": {
+              "compilerOptions": {},
+              "errorHandler": undefined,
+              "globalProperties": {},
+              "isNativeTag": [Function],
+              "optionMergeStrategies": {},
+              "performance": false,
+              "warnHandler": undefined,
+            },
+            "directives": {},
+            "emitsCache": WeakMap {},
+            "mixins": [
+              {
+                "beforeCreate": [Function],
+              },
+            ],
+            "optionsCache": WeakMap {},
+            "propsCache": WeakMap {},
+            "provides": {},
+            "reload": [Function],
+          },
+          "asyncDep": null,
+          "asyncResolved": false,
+          "attrs": {},
+          "bc": null,
+          "bm": null,
+          "bu": null,
+          "bum": null,
+          "c": null,
+          "components": {},
+          "ctx": {
+            "image": {
+              "alt": "Alt text",
+              "height": 200,
+              "url": "/image.png",
+              "width": 400,
+            },
+            "width": "default",
+          },
+          "da": null,
+          "data": {},
+          "devtoolsRawSetupState": {
+            "componentImage": RefImpl {
+              "__v_isRef": true,
+              "__v_isShallow": false,
+              "_rawValue": <img
+                alt="Alt text"
+                class="w-full transition-opacity duration-300 opacity-0"
+                data-part="image"
+                height="200"
+                loading="lazy"
+                src="/image.png"
+                width="400"
+              />,
+              "_value": <img
+                alt="Alt text"
+                class="w-full transition-opacity duration-300 opacity-0"
+                data-part="image"
+                height="200"
+                loading="lazy"
+                src="/image.png"
+                width="400"
+              />,
+              "dep": undefined,
+            },
+            "getGCD": [Function],
+            "loadImage": [Function],
+            "loadedFalse": "opacity-0",
+            "loadedTrue": "opactity-1",
+            "loadingClasses": RefImpl {
+              "__v_isRef": true,
+              "__v_isShallow": false,
+              "_rawValue": "opacity-0",
+              "_value": "opacity-0",
+              "dep": Set {
+                ReactiveEffect {
+                  "active": true,
+                  "allowRecurse": true,
+                  "deps": [
+                    Set {
+                      [Circular],
+                    },
+                    Set {
+                      [Circular],
+                    },
+                    [Circular],
+                    Set {
+                      [Circular],
+                    },
+                  ],
+                  "fn": [Function],
+                  "onTrack": undefined,
+                  "onTrigger": undefined,
+                  "parent": undefined,
+                  "scheduler": [Function],
+                },
+              },
+            },
+            "loadingDefault": "transition-opacity duration-300",
+            "part": ComputedRefImpl {
+              "__v_isReadonly": true,
+              "__v_isRef": true,
+              "_cacheable": true,
+              "_dirty": false,
+              "_setter": [Function],
+              "_value": {
+                "image": [
+                  "w-full",
+                ],
+              },
+              "dep": Set {
+                ReactiveEffect {
+                  "active": true,
+                  "allowRecurse": true,
+                  "deps": [
+                    [Circular],
+                    Set {
+                      [Circular],
+                    },
+                    Set {
+                      [Circular],
+                    },
+                    Set {
+                      [Circular],
+                    },
+                  ],
+                  "fn": [Function],
+                  "onTrack": undefined,
+                  "onTrigger": undefined,
+                  "parent": undefined,
+                  "scheduler": [Function],
+                },
+              },
+              "effect": ReactiveEffect {
+                "active": true,
+                "computed": [Circular],
+                "deps": [
+                  Set {
+                    [Circular],
+                  },
+                ],
+                "fn": [Function],
+                "parent": undefined,
+                "scheduler": [Function],
+              },
+            },
+            "parts": {
+              "component": {},
+              "image": {
+                "width": {
+                  "default": [
+                    "w-full",
+                  ],
+                },
+              },
+            },
+            "props": {
+              "image": {
+                "alt": "Alt text",
+                "height": 200,
+                "url": "/image.png",
+                "width": 400,
+              },
+              "width": "default",
+            },
+            "ratio": [Function],
+            "setWrapperPadding": [Function],
+            "wrapperPadding": RefImpl {
+              "__v_isRef": true,
+              "__v_isShallow": false,
+              "_rawValue": "padding-top: 50%",
+              "_value": "padding-top: 50%",
+              "dep": Set {
+                ReactiveEffect {
+                  "active": true,
+                  "allowRecurse": true,
+                  "deps": [
+                    Set {
+                      [Circular],
+                    },
+                    [Circular],
+                    Set {
+                      [Circular],
+                    },
+                    Set {
+                      [Circular],
+                    },
+                  ],
+                  "fn": [Function],
+                  "onTrack": undefined,
+                  "onTrigger": undefined,
+                  "parent": undefined,
+                  "scheduler": [Function],
+                },
+              },
+            },
+          },
+          "directives": null,
+          "ec": null,
+          "effect": ReactiveEffect {
+            "active": true,
+            "allowRecurse": true,
+            "deps": [
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
+            ],
+            "fn": [Function],
+            "onTrack": undefined,
+            "onTrigger": undefined,
+            "parent": undefined,
+            "scheduler": [Function],
+          },
+          "emit": [Function],
+          "emitsOptions": null,
+          "emitted": null,
+          "exposeProxy": {
+            "hasOwnProperty": [Function],
+          },
+          "exposed": {
+            "hasOwnProperty": [Function],
+          },
+          "inheritAttrs": undefined,
+          "isDeactivated": false,
+          "isMounted": true,
+          "isUnmounted": false,
+          "m": [
+            [Function],
+          ],
+          "next": null,
+          "parent": [Circular],
+          "props": {
+            "image": {
+              "alt": "Alt text",
+              "height": 200,
+              "url": "/image.png",
+              "width": 400,
+            },
+            "width": "default",
+          },
+          "propsDefaults": {},
+          "propsOptions": [
+            {
+              "image": {
+                "0": false,
+                "1": true,
+                "default": {},
+                "required": true,
+                "type": [Function],
+              },
+              "width": {
+                "0": false,
+                "1": true,
+                "default": "default",
+                "type": [Function],
+              },
+            },
+            [
+              "width",
+              "image",
+            ],
+          ],
+          "provides": {},
+          "proxy": {
+            "image": {
+              "alt": "Alt text",
+              "height": 200,
+              "url": "/image.png",
+              "width": 400,
+            },
+            "width": "default",
+          },
+          "refs": {
+            "componentImage": <img
+              alt="Alt text"
+              class="w-full transition-opacity duration-300 opacity-0"
+              data-part="image"
+              height="200"
+              loading="lazy"
+              src="/image.png"
+              width="400"
+            />,
+          },
+          "render": [Function],
+          "renderCache": [],
+          "root": [Circular],
+          "rtc": null,
+          "rtg": null,
+          "scope": EffectScope {
+            "active": true,
+            "cleanups": [],
+            "effects": [
+              ReactiveEffect {
+                "active": true,
+                "computed": ComputedRefImpl {
+                  "__v_isReadonly": true,
+                  "__v_isRef": true,
+                  "_cacheable": true,
+                  "_dirty": false,
+                  "_setter": [Function],
+                  "_value": {
+                    "image": [
+                      "w-full",
+                    ],
+                  },
+                  "dep": Set {
+                    ReactiveEffect {
+                      "active": true,
+                      "allowRecurse": true,
+                      "deps": [
+                        [Circular],
+                        Set {
+                          [Circular],
+                        },
+                        Set {
+                          [Circular],
+                        },
+                        Set {
+                          [Circular],
+                        },
+                      ],
+                      "fn": [Function],
+                      "onTrack": undefined,
+                      "onTrigger": undefined,
+                      "parent": undefined,
+                      "scheduler": [Function],
+                    },
+                  },
+                  "effect": [Circular],
+                },
+                "deps": [
+                  Set {
+                    [Circular],
+                  },
+                ],
+                "fn": [Function],
+                "parent": undefined,
+                "scheduler": [Function],
+              },
+              ReactiveEffect {
+                "active": true,
+                "allowRecurse": true,
+                "deps": [
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
+                ],
+                "fn": [Function],
+                "onTrack": undefined,
+                "onTrigger": undefined,
+                "parent": undefined,
+                "scheduler": [Function],
+              },
+            ],
+          },
+          "setupContext": {
+            "attrs": {},
+            "emit": [Function],
+            "expose": [Function],
+            "slots": {},
+          },
+          "setupState": {
+            "componentImage": <img
+              alt="Alt text"
+              class="w-full transition-opacity duration-300 opacity-0"
+              data-part="image"
+              height="200"
+              loading="lazy"
+              src="/image.png"
+              width="400"
+            />,
+            "getGCD": [Function],
+            "loadImage": [Function],
+            "loadedFalse": "opacity-0",
+            "loadedTrue": "opactity-1",
+            "loadingClasses": "opacity-0",
+            "loadingDefault": "transition-opacity duration-300",
+            "part": {
+              "image": [
+                "w-full",
+              ],
+            },
+            "parts": {
+              "component": {},
+              "image": {
+                "width": {
+                  "default": [
+                    "w-full",
+                  ],
+                },
+              },
+            },
+            "props": {
+              "image": {
+                "alt": "Alt text",
+                "height": 200,
+                "url": "/image.png",
+                "width": 400,
+              },
+              "width": "default",
+            },
+            "ratio": [Function],
+            "setWrapperPadding": [Function],
+            "wrapperPadding": "padding-top: 50%",
+          },
+          "slots": {},
+          "sp": null,
+          "subTree": {
+            "__v_isVNode": true,
+            "__v_skip": true,
+            "anchor": null,
+            "appContext": null,
+            "children": [
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": null,
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": [
+                      "src",
+                      "alt",
+                      "height",
+                      "width",
+                    ],
+                    "el": <img
+                      alt="Alt text"
+                      class="w-full transition-opacity duration-300 opacity-0"
+                      data-part="image"
+                      height="200"
+                      loading="lazy"
+                      src="/image.png"
+                      width="400"
+                    />,
+                    "key": null,
+                    "patchFlag": 10,
+                    "props": {
+                      "alt": "Alt text",
+                      "class": "w-full transition-opacity duration-300 opacity-0",
+                      "data-part": "image",
+                      "height": 200,
+                      "loading": "lazy",
+                      "ref": "componentImage",
+                      "src": "/image.png",
+                      "width": 400,
+                    },
+                    "ref": {
+                      "f": false,
+                      "i": [Circular],
+                      "k": undefined,
+                      "r": "componentImage",
+                    },
+                    "scopeId": null,
+                    "shapeFlag": 1,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "img",
+                  },
+                ],
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <picture>
+                  <img
+                    alt="Alt text"
+                    class="w-full transition-opacity duration-300 opacity-0"
+                    data-part="image"
+                    height="200"
+                    loading="lazy"
+                    src="/image.png"
+                    width="400"
+                  />
+                </picture>,
+                "key": null,
+                "patchFlag": 0,
+                "props": null,
+                "ref": null,
+                "scopeId": null,
+                "shapeFlag": 17,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "picture",
+              },
+            ],
+            "component": null,
+            "dirs": null,
+            "dynamicChildren": [
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": null,
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": [
+                  "src",
+                  "alt",
+                  "height",
+                  "width",
+                ],
+                "el": <img
+                  alt="Alt text"
+                  class="w-full transition-opacity duration-300 opacity-0"
+                  data-part="image"
+                  height="200"
+                  loading="lazy"
+                  src="/image.png"
+                  width="400"
+                />,
+                "key": null,
+                "patchFlag": 10,
+                "props": {
+                  "alt": "Alt text",
+                  "class": "w-full transition-opacity duration-300 opacity-0",
+                  "data-part": "image",
+                  "height": 200,
+                  "loading": "lazy",
+                  "ref": "componentImage",
+                  "src": "/image.png",
+                  "width": 400,
+                },
+                "ref": {
+                  "f": false,
+                  "i": [Circular],
+                  "k": undefined,
+                  "r": "componentImage",
+                },
+                "scopeId": null,
+                "shapeFlag": 1,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "img",
+              },
+            ],
+            "dynamicProps": [
+              "data-component",
+            ],
+            "el": <div
+              class=""
+              data-component="BonesImage"
+              data-part="component"
+              style="padding-top: 50%;"
+            >
+              <picture>
+                <img
+                  alt="Alt text"
+                  class="w-full transition-opacity duration-300 opacity-0"
+                  data-part="image"
+                  height="200"
+                  loading="lazy"
+                  src="/image.png"
+                  width="400"
+                />
+              </picture>
+            </div>,
+            "key": null,
+            "patchFlag": 14,
+            "props": {
+              "class": "",
+              "data-component": "BonesImage",
+              "data-part": "component",
+              "style": "padding-top: 50%",
+            },
+            "ref": null,
+            "scopeId": null,
+            "shapeFlag": 17,
+            "slotScopeIds": null,
+            "ssContent": null,
+            "ssFallback": null,
+            "staticCount": 0,
+            "suspense": null,
+            "target": null,
+            "targetAnchor": null,
+            "transition": null,
+            "type": "div",
+          },
+          "suspense": null,
+          "suspenseId": 0,
+          "type": {
+            "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/Image/Image.vue",
+            "__hmrId": "4b9c9a07",
+            "components": {},
+            "name": "BonesImage",
+            "props": {
+              "image": {
+                "0": false,
+                "1": true,
+                "default": {},
+                "required": true,
+                "type": [Function],
+              },
+              "width": {
+                "0": false,
+                "1": true,
+                "default": "default",
+                "type": [Function],
+              },
+            },
+            "render": [Function],
+            "setup": [Function],
+          },
+          "u": null,
+          "uid": 3,
+          "um": null,
+          "update": [Function],
+          "vnode": [Circular],
+          "withProxy": null,
+        },
+        "dirs": null,
+        "dynamicChildren": null,
+        "dynamicProps": null,
+        "el": <div
+          class=""
+          data-component="BonesImage"
+          data-part="component"
+          style="padding-top: 50%;"
+        >
+          <picture>
+            <img
+              alt="Alt text"
+              class="w-full transition-opacity duration-300 opacity-0"
+              data-part="image"
+              height="200"
+              loading="lazy"
+              src="/image.png"
+              width="400"
+            />
+          </picture>
+        </div>,
+        "key": null,
+        "patchFlag": 0,
+        "props": {
+          "image": {
+            "alt": "Alt text",
+            "height": 200,
+            "url": "/image.png",
+            "width": 400,
+          },
+          "ref": "VTU_COMPONENT",
+        },
+        "ref": {
+          "f": false,
+          "i": [Circular],
+          "k": undefined,
+          "r": "VTU_COMPONENT",
+        },
+        "scopeId": null,
+        "shapeFlag": 4,
+        "slotScopeIds": null,
+        "ssContent": null,
+        "ssFallback": null,
+        "staticCount": 0,
+        "suspense": null,
+        "target": null,
+        "targetAnchor": null,
+        "transition": null,
+        "type": {
+          "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/Image/Image.vue",
+          "__hmrId": "4b9c9a07",
+          "components": {},
+          "name": "BonesImage",
+          "props": {
+            "image": {
+              "0": false,
+              "1": true,
+              "default": {},
+              "required": true,
+              "type": [Function],
+            },
+            "width": {
+              "0": false,
+              "1": true,
+              "default": "default",
+              "type": [Function],
+            },
+          },
+          "render": [Function],
+          "setup": [Function],
+        },
+      },
+      "suspense": null,
+      "suspenseId": 0,
+      "type": {
+        "name": "VTU_ROOT",
+        "render": [Function],
+      },
+      "u": null,
+      "uid": 2,
+      "um": null,
+      "update": [Function],
+      "vnode": {
+        "__v_isVNode": true,
+        "__v_skip": true,
+        "anchor": null,
+        "appContext": {
+          "app": [Circular],
+          "components": {
+            "transition": {
+              "name": "transition",
+            },
+            "transition-group": {
+              "name": "transition-group",
+            },
+          },
+          "config": {
+            "compilerOptions": {},
+            "errorHandler": undefined,
+            "globalProperties": {},
+            "isNativeTag": [Function],
+            "optionMergeStrategies": {},
+            "performance": false,
+            "warnHandler": undefined,
+          },
+          "directives": {},
+          "emitsCache": WeakMap {},
+          "mixins": [
+            {
+              "beforeCreate": [Function],
+            },
+          ],
+          "optionsCache": WeakMap {},
+          "propsCache": WeakMap {},
+          "provides": {},
+          "reload": [Function],
+        },
+        "children": null,
+        "component": [Circular],
+        "dirs": null,
+        "dynamicChildren": null,
+        "dynamicProps": null,
+        "el": <div
+          class=""
+          data-component="BonesImage"
+          data-part="component"
+          style="padding-top: 50%;"
+        >
+          <picture>
+            <img
+              alt="Alt text"
+              class="w-full transition-opacity duration-300 opacity-0"
+              data-part="image"
+              height="200"
+              loading="lazy"
+              src="/image.png"
+              width="400"
+            />
+          </picture>
+        </div>,
+        "key": null,
+        "patchFlag": 0,
+        "props": null,
+        "ref": null,
+        "scopeId": null,
+        "shapeFlag": 4,
+        "slotScopeIds": null,
+        "ssContent": null,
+        "ssFallback": null,
+        "staticCount": 0,
+        "suspense": null,
+        "target": null,
+        "targetAnchor": null,
+        "transition": null,
+        "type": {
+          "name": "VTU_ROOT",
+          "render": [Function],
+        },
+      },
+      "withProxy": null,
+    },
+    "_props": null,
+    "_uid": 1,
+    "component": [Function],
+    "config": {
+      "compilerOptions": {},
+      "errorHandler": undefined,
+      "globalProperties": {},
+      "isNativeTag": [Function],
+      "optionMergeStrategies": {},
+      "performance": false,
+      "warnHandler": undefined,
+    },
+    "directive": [Function],
+    "mixin": [Function],
+    "mount": [Function],
+    "provide": [Function],
+    "unmount": [Function],
+    "use": [Function],
+    "version": "3.2.33",
+  },
+  "__setProps": [Function],
+  "componentVM": {
+    "image": {
+      "alt": "Alt text",
+      "height": 200,
+      "url": "/image.png",
+      "width": 400,
+    },
+    "width": "default",
+  },
+  "isDisabled": [Function],
+  "rootVM": {},
+  "wrapperElement": <div
+    class=""
+    data-component="BonesImage"
+    data-part="component"
+    style="padding-top: 50%;"
+  >
+    <picture>
+      <img
+        alt="Alt text"
+        class="w-full transition-opacity duration-300 opacity-0"
+        data-part="image"
+        height="200"
+        loading="lazy"
+        src="/image.png"
+        width="400"
+      />
+    </picture>
+  </div>,
+}
+`;

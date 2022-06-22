@@ -5,6 +5,14 @@ export interface ClassProps {
   };
 }
 
+export interface SharedProps {
+  [key: string]: {
+    required?: boolean;
+    type: any;
+    default?: string;
+  };
+}
+
 export type Props = Readonly<
   {
     [x: string]: unknown;

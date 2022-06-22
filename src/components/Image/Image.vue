@@ -42,6 +42,7 @@ const props = defineProps({
   image: {
     required: true,
     type: Object as PropType<Image>,
+    default: {}, // @todo: Remove when resolved - Tests fail when there's not default
   },
 });
 
@@ -63,9 +64,10 @@ const setWrapperPadding = (): void => {
   const width: number = props.image.width;
   const height: number = props.image.height;
 
-  const padding: string = CSS?.supports("aspect-ratio: 1/1")
-    ? `aspect-ratio: ${ratio(width, height)}`
-    : `padding-top: ${(height / width) * 100}%`;
+  const padding: string =
+    typeof CSS !== "undefined" && CSS?.supports("aspect-ratio: 1/1")
+      ? `aspect-ratio: ${ratio(width, height)}`
+      : `padding-top: ${(height / width) * 100}%`;
 
   wrapperPadding.value = padding;
 };

@@ -33,9 +33,8 @@
         data-part="modalClose"
         @click="toggleModal('default')"
         v-if="
-          [CLOSE_BUTTON_DISPLAYS.BOTH, CLOSE_BUTTON_DISPLAYS.MODAL].includes(
-            props.showCloseButton
-          )
+          props.showCloseButton === CLOSE_BUTTON_DISPLAYS.BOTH ||
+          props.showCloseButton === CLOSE_BUTTON_DISPLAYS.MODAL
         "
         aria-label="Close modal"
       >
@@ -47,9 +46,8 @@
       data-part="overlayClose"
       @click="toggleModal('default')"
       v-if="
-        [CLOSE_BUTTON_DISPLAYS.BOTH, CLOSE_BUTTON_DISPLAYS.OVERLAY].includes(
-          props.showCloseButton
-        )
+        props.showCloseButton === CLOSE_BUTTON_DISPLAYS.BOTH ||
+        props.showCloseButton === CLOSE_BUTTON_DISPLAYS.OVERLAY
       "
       aria-label="Close modal"
     >

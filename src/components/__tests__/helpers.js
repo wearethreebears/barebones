@@ -1,14 +1,17 @@
 import { describe, it, expect } from "vitest";
 
-import { mount } from "@vue/test-utils";
+import { shallowMount } from "@vue/test-utils";
 
-export const allComponentPartClassesToDisplayCorrectly = (component, parts) => {
+export const allComponentPartClassesToDisplayCorrectly = (component, parts, stubs = []) => {
     Object.keys(parts).forEach(part => {
         Object.keys(parts[part]).forEach(prop => {
             Object.keys(parts[part][prop]).forEach(propValue => {
-                const wrapper = mount(component, {
+                const wrapper = shallowMount(component, {
                     props: {
                         [prop]: propValue
+                    },
+                    global: {
+                        stubs: stubs
                     }
                 });
                 const flatClasses = parts[part][prop][propValue].flat();
@@ -19,11 +22,9 @@ export const allComponentPartClassesToDisplayCorrectly = (component, parts) => {
 
                         flatClasses.forEach(classes => {
                             classes.split(' ').forEach(singleClass => {
-                                if (part === 'component') {
-                                    expect(wrapper.classes()).toContain(singleClass);
-                                }
-                                else {
-                                    expect(wrapper.find(`[data-part="${part}"]`).classes()).toContain(singleClass);
+                                const componentPart = wrapper.find(`[data-part="${part}"]`);
+                                if (Object.keys(componentPart).length) {
+                                    expect(componentPart.classes()).toContain(singleClass);
                                 }
                             })
                         })
