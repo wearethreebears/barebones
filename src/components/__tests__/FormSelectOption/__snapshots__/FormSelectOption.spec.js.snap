@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`Text > renders properly 1`] = `
+exports[`FormSelectOption > renders properly 1`] = `
 VueWrapper {
   "__app": {
     "_component": {
@@ -10,14 +10,13 @@ VueWrapper {
     "_container": <div
       data-v-app=""
     >
-      <p
-        class="font-sans text-slate-500 text-base"
-        data-part="component"
+      <option
+        class=""
+        data-component="BonesFormSelectOption"
+        value="bronx-tale"
       >
-        
-        Hello world
-        
-      </p>
+        Bronx tale
+      </option>
     </div>,
     "_context": {
       "app": [Circular],
@@ -108,6 +107,12 @@ VueWrapper {
           Set {
             [Circular],
           },
+          Set {
+            [Circular],
+          },
+          Set {
+            [Circular],
+          },
         ],
         "fn": [Function],
         "onTrack": undefined,
@@ -159,6 +164,12 @@ VueWrapper {
               Set {
                 [Circular],
               },
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
             ],
             "fn": [Function],
             "onTrack": undefined,
@@ -177,10 +188,7 @@ VueWrapper {
         "__v_skip": true,
         "anchor": null,
         "appContext": null,
-        "children": {
-          "_ctx": [Circular],
-          "default": [Function],
-        },
+        "children": null,
         "component": {
           "a": null,
           "accessCache": {},
@@ -225,10 +233,9 @@ VueWrapper {
           "c": null,
           "components": {},
           "ctx": {
-            "color": "default",
-            "size": "default",
-            "style": "default",
-            "tag": "p",
+            "label": "Bronx tale",
+            "selected": undefined,
+            "value": "bronx-tale",
           },
           "da": null,
           "data": {},
@@ -239,22 +246,22 @@ VueWrapper {
               "_cacheable": true,
               "_dirty": false,
               "_setter": [Function],
-              "_value": {
-                "component": [
-                  "font-sans",
-                  "text-slate-500",
-                  "text-base",
-                ],
-              },
+              "_value": {},
               "dep": Set {
                 ReactiveEffect {
                   "active": true,
                   "allowRecurse": true,
                   "deps": [
+                    [Circular],
                     Set {
                       [Circular],
                     },
-                    [Circular],
+                    Set {
+                      [Circular],
+                    },
+                    Set {
+                      [Circular],
+                    },
                   ],
                   "fn": [Function],
                   "onTrack": undefined,
@@ -266,49 +273,19 @@ VueWrapper {
               "effect": ReactiveEffect {
                 "active": true,
                 "computed": [Circular],
-                "deps": [
-                  Set {
-                    [Circular],
-                  },
-                  Set {
-                    [Circular],
-                  },
-                  Set {
-                    [Circular],
-                  },
-                ],
+                "deps": [],
                 "fn": [Function],
                 "parent": undefined,
                 "scheduler": [Function],
               },
             },
             "parts": {
-              "component": {
-                "color": {
-                  "default": [
-                    "text-slate-500",
-                  ],
-                },
-                "size": {
-                  "default": [
-                    "text-base",
-                  ],
-                  "title": [
-                    "text-2xl",
-                  ],
-                },
-                "style": {
-                  "default": [
-                    "font-sans",
-                  ],
-                },
-              },
+              "component": {},
             },
             "props": {
-              "color": "default",
-              "size": "default",
-              "style": "default",
-              "tag": "p",
+              "label": "Bronx tale",
+              "selected": undefined,
+              "value": "bronx-tale",
             },
           },
           "directives": null,
@@ -317,6 +294,12 @@ VueWrapper {
             "active": true,
             "allowRecurse": true,
             "deps": [
+              Set {
+                [Circular],
+              },
+              Set {
+                [Circular],
+              },
               Set {
                 [Circular],
               },
@@ -347,53 +330,42 @@ VueWrapper {
           "next": null,
           "parent": [Circular],
           "props": {
-            "color": "default",
-            "size": "default",
-            "style": "default",
-            "tag": "p",
+            "label": "Bronx tale",
+            "selected": undefined,
+            "value": "bronx-tale",
           },
           "propsDefaults": {},
           "propsOptions": [
             {
-              "color": {
+              "label": {
                 "0": false,
                 "1": true,
-                "default": "default",
+                "required": true,
                 "type": [Function],
               },
-              "size": {
-                "0": false,
+              "selected": {
+                "0": true,
                 "1": true,
-                "default": "default",
-                "type": [Function],
-              },
-              "style": {
-                "0": false,
-                "1": true,
-                "default": "default",
-                "type": [Function],
-              },
-              "tag": {
-                "0": false,
-                "1": true,
-                "default": "p",
+                "default": undefined,
                 "required": false,
+                "type": [Function],
+              },
+              "value": {
+                "0": false,
+                "1": true,
+                "required": true,
                 "type": [Function],
               },
             },
             [
-              "style",
-              "color",
-              "size",
-              "tag",
+              "selected",
             ],
           ],
           "provides": {},
           "proxy": {
-            "color": "default",
-            "size": "default",
-            "style": "default",
-            "tag": "p",
+            "label": "Bronx tale",
+            "selected": undefined,
+            "value": "bronx-tale",
           },
           "refs": {},
           "render": [Function],
@@ -413,22 +385,22 @@ VueWrapper {
                   "_cacheable": true,
                   "_dirty": false,
                   "_setter": [Function],
-                  "_value": {
-                    "component": [
-                      "font-sans",
-                      "text-slate-500",
-                      "text-base",
-                    ],
-                  },
+                  "_value": {},
                   "dep": Set {
                     ReactiveEffect {
                       "active": true,
                       "allowRecurse": true,
                       "deps": [
+                        [Circular],
                         Set {
                           [Circular],
                         },
-                        [Circular],
+                        Set {
+                          [Circular],
+                        },
+                        Set {
+                          [Circular],
+                        },
                       ],
                       "fn": [Function],
                       "onTrack": undefined,
@@ -439,17 +411,7 @@ VueWrapper {
                   },
                   "effect": [Circular],
                 },
-                "deps": [
-                  Set {
-                    [Circular],
-                  },
-                  Set {
-                    [Circular],
-                  },
-                  Set {
-                    [Circular],
-                  },
-                ],
+                "deps": [],
                 "fn": [Function],
                 "parent": undefined,
                 "scheduler": [Function],
@@ -458,6 +420,12 @@ VueWrapper {
                 "active": true,
                 "allowRecurse": true,
                 "deps": [
+                  Set {
+                    [Circular],
+                  },
+                  Set {
+                    [Circular],
+                  },
                   Set {
                     [Circular],
                   },
@@ -477,196 +445,53 @@ VueWrapper {
             "attrs": {},
             "emit": [Function],
             "expose": [Function],
-            "slots": {
-              "default": [Function],
-            },
+            "slots": {},
           },
           "setupState": {
-            "part": {
-              "component": [
-                "font-sans",
-                "text-slate-500",
-                "text-base",
-              ],
-            },
+            "part": {},
             "parts": {
-              "component": {
-                "color": {
-                  "default": [
-                    "text-slate-500",
-                  ],
-                },
-                "size": {
-                  "default": [
-                    "text-base",
-                  ],
-                  "title": [
-                    "text-2xl",
-                  ],
-                },
-                "style": {
-                  "default": [
-                    "font-sans",
-                  ],
-                },
-              },
+              "component": {},
             },
             "props": {
-              "color": "default",
-              "size": "default",
-              "style": "default",
-              "tag": "p",
+              "label": "Bronx tale",
+              "selected": undefined,
+              "value": "bronx-tale",
             },
           },
-          "slots": {
-            "default": [Function],
-          },
+          "slots": {},
           "sp": null,
           "subTree": {
             "__v_isVNode": true,
             "__v_skip": true,
             "anchor": null,
             "appContext": null,
-            "children": [
-              {
-                "__v_isVNode": true,
-                "__v_skip": true,
-                "anchor": ,
-                "appContext": null,
-                "children": [
-                  {
-                    "__v_isVNode": true,
-                    "__v_skip": true,
-                    "anchor": null,
-                    "appContext": null,
-                    "children": "Hello world",
-                    "component": null,
-                    "dirs": null,
-                    "dynamicChildren": null,
-                    "dynamicProps": null,
-                    "el": Hello world,
-                    "key": null,
-                    "patchFlag": 0,
-                    "props": null,
-                    "ref": null,
-                    "scopeId": null,
-                    "shapeFlag": 8,
-                    "slotScopeIds": null,
-                    "ssContent": null,
-                    "ssFallback": null,
-                    "staticCount": 0,
-                    "suspense": null,
-                    "target": null,
-                    "targetAnchor": null,
-                    "transition": null,
-                    "type": Symbol(Text),
-                  },
-                ],
-                "component": null,
-                "dirs": null,
-                "dynamicChildren": null,
-                "dynamicProps": null,
-                "el": ,
-                "key": "_default",
-                "patchFlag": -2,
-                "props": {
-                  "key": "_default",
-                },
-                "ref": null,
-                "scopeId": null,
-                "shapeFlag": 16,
-                "slotScopeIds": null,
-                "ssContent": null,
-                "ssFallback": null,
-                "staticCount": 0,
-                "suspense": null,
-                "target": null,
-                "targetAnchor": null,
-                "transition": null,
-                "type": Symbol(Fragment),
-              },
-            ],
+            "children": "Bronx tale",
             "component": null,
             "dirs": null,
-            "dynamicChildren": [
-              {
-                "__v_isVNode": true,
-                "__v_skip": true,
-                "anchor": ,
-                "appContext": null,
-                "children": [
-                  {
-                    "__v_isVNode": true,
-                    "__v_skip": true,
-                    "anchor": null,
-                    "appContext": null,
-                    "children": "Hello world",
-                    "component": null,
-                    "dirs": null,
-                    "dynamicChildren": null,
-                    "dynamicProps": null,
-                    "el": Hello world,
-                    "key": null,
-                    "patchFlag": 0,
-                    "props": null,
-                    "ref": null,
-                    "scopeId": null,
-                    "shapeFlag": 8,
-                    "slotScopeIds": null,
-                    "ssContent": null,
-                    "ssFallback": null,
-                    "staticCount": 0,
-                    "suspense": null,
-                    "target": null,
-                    "targetAnchor": null,
-                    "transition": null,
-                    "type": Symbol(Text),
-                  },
-                ],
-                "component": null,
-                "dirs": null,
-                "dynamicChildren": null,
-                "dynamicProps": null,
-                "el": ,
-                "key": "_default",
-                "patchFlag": -2,
-                "props": {
-                  "key": "_default",
-                },
-                "ref": null,
-                "scopeId": null,
-                "shapeFlag": 16,
-                "slotScopeIds": null,
-                "ssContent": null,
-                "ssFallback": null,
-                "staticCount": 0,
-                "suspense": null,
-                "target": null,
-                "targetAnchor": null,
-                "transition": null,
-                "type": Symbol(Fragment),
-              },
-            ],
+            "dynamicChildren": [],
             "dynamicProps": [
-              "class",
+              "data-component",
+              "value",
+              "selected",
             ],
-            "el": <p
-              class="font-sans text-slate-500 text-base"
-              data-part="component"
+            "el": <option
+              class=""
+              data-component="BonesFormSelectOption"
+              value="bronx-tale"
             >
-              
-              Hello world
-              
-            </p>,
+              Bronx tale
+            </option>,
             "key": null,
-            "patchFlag": 8,
+            "patchFlag": 11,
             "props": {
-              "class": "font-sans text-slate-500 text-base",
-              "data-part": "component",
+              "class": "",
+              "data-component": "BonesFormSelectOption",
+              "selected": undefined,
+              "value": "bronx-tale",
             },
             "ref": null,
             "scopeId": null,
-            "shapeFlag": 17,
+            "shapeFlag": 9,
             "slotScopeIds": null,
             "ssContent": null,
             "ssFallback": null,
@@ -675,39 +500,33 @@ VueWrapper {
             "target": null,
             "targetAnchor": null,
             "transition": null,
-            "type": "p",
+            "type": "option",
           },
           "suspense": null,
           "suspenseId": 0,
           "type": {
-            "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/Text/Text.vue",
-            "__hmrId": "6dc3e16f",
+            "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/FormSelectOption/FormSelectOption.vue",
+            "__hmrId": "5dd52122",
             "components": {},
-            "name": "BonesText",
+            "name": "BonesFormSelectOption",
             "props": {
-              "color": {
+              "label": {
                 "0": false,
                 "1": true,
-                "default": "default",
+                "required": true,
                 "type": [Function],
               },
-              "size": {
-                "0": false,
+              "selected": {
+                "0": true,
                 "1": true,
-                "default": "default",
-                "type": [Function],
-              },
-              "style": {
-                "0": false,
-                "1": true,
-                "default": "default",
-                "type": [Function],
-              },
-              "tag": {
-                "0": false,
-                "1": true,
-                "default": "p",
+                "default": undefined,
                 "required": false,
+                "type": [Function],
+              },
+              "value": {
+                "0": false,
+                "1": true,
+                "required": true,
                 "type": [Function],
               },
             },
@@ -715,7 +534,7 @@ VueWrapper {
             "setup": [Function],
           },
           "u": null,
-          "uid": 9,
+          "uid": 1,
           "um": null,
           "update": [Function],
           "vnode": [Circular],
@@ -724,18 +543,19 @@ VueWrapper {
         "dirs": null,
         "dynamicChildren": null,
         "dynamicProps": null,
-        "el": <p
-          class="font-sans text-slate-500 text-base"
-          data-part="component"
+        "el": <option
+          class=""
+          data-component="BonesFormSelectOption"
+          value="bronx-tale"
         >
-          
-          Hello world
-          
-        </p>,
+          Bronx tale
+        </option>,
         "key": null,
         "patchFlag": 0,
         "props": {
+          "label": "Bronx tale",
           "ref": "VTU_COMPONENT",
+          "value": "bronx-tale",
         },
         "ref": {
           "f": false,
@@ -744,7 +564,7 @@ VueWrapper {
           "r": "VTU_COMPONENT",
         },
         "scopeId": null,
-        "shapeFlag": 36,
+        "shapeFlag": 4,
         "slotScopeIds": null,
         "ssContent": null,
         "ssFallback": null,
@@ -754,34 +574,28 @@ VueWrapper {
         "targetAnchor": null,
         "transition": null,
         "type": {
-          "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/Text/Text.vue",
-          "__hmrId": "6dc3e16f",
+          "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/FormSelectOption/FormSelectOption.vue",
+          "__hmrId": "5dd52122",
           "components": {},
-          "name": "BonesText",
+          "name": "BonesFormSelectOption",
           "props": {
-            "color": {
+            "label": {
               "0": false,
               "1": true,
-              "default": "default",
+              "required": true,
               "type": [Function],
             },
-            "size": {
-              "0": false,
+            "selected": {
+              "0": true,
               "1": true,
-              "default": "default",
-              "type": [Function],
-            },
-            "style": {
-              "0": false,
-              "1": true,
-              "default": "default",
-              "type": [Function],
-            },
-            "tag": {
-              "0": false,
-              "1": true,
-              "default": "p",
+              "default": undefined,
               "required": false,
+              "type": [Function],
+            },
+            "value": {
+              "0": false,
+              "1": true,
+              "required": true,
               "type": [Function],
             },
           },
@@ -796,7 +610,7 @@ VueWrapper {
         "render": [Function],
       },
       "u": null,
-      "uid": 8,
+      "uid": 0,
       "um": null,
       "update": [Function],
       "vnode": {
@@ -839,14 +653,13 @@ VueWrapper {
         "dirs": null,
         "dynamicChildren": null,
         "dynamicProps": null,
-        "el": <p
-          class="font-sans text-slate-500 text-base"
-          data-part="component"
+        "el": <option
+          class=""
+          data-component="BonesFormSelectOption"
+          value="bronx-tale"
         >
-          
-          Hello world
-          
-        </p>,
+          Bronx tale
+        </option>,
         "key": null,
         "patchFlag": 0,
         "props": null,
@@ -869,7 +682,7 @@ VueWrapper {
       "withProxy": null,
     },
     "_props": null,
-    "_uid": 4,
+    "_uid": 0,
     "component": [Function],
     "config": {
       "compilerOptions": {},
@@ -890,20 +703,18 @@ VueWrapper {
   },
   "__setProps": [Function],
   "componentVM": {
-    "color": "default",
-    "size": "default",
-    "style": "default",
-    "tag": "p",
+    "label": "Bronx tale",
+    "selected": undefined,
+    "value": "bronx-tale",
   },
   "isDisabled": [Function],
   "rootVM": {},
-  "wrapperElement": <p
-    class="font-sans text-slate-500 text-base"
-    data-part="component"
+  "wrapperElement": <option
+    class=""
+    data-component="BonesFormSelectOption"
+    value="bronx-tale"
   >
-    
-    Hello world
-    
-  </p>,
+    Bronx tale
+  </option>,
 }
 `;

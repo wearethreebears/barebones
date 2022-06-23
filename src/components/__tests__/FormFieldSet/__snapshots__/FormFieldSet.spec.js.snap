@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`Text > renders properly 1`] = `
+exports[`FormFieldSet > renders properly 1`] = `
 VueWrapper {
   "__app": {
     "_component": {
@@ -10,14 +10,26 @@ VueWrapper {
     "_container": <div
       data-v-app=""
     >
-      <p
-        class="font-sans text-slate-500 text-base"
+      <fieldset
+        class="p-4 border border-gray-200 mb-4"
+        data-component="BonesFormFieldSet"
         data-part="component"
       >
-        
-        Hello world
-        
-      </p>
+        <legend
+          class="text-sky-900 py-2 px-4 border border-gray-200 rounded"
+          data-part="label"
+        >
+          Movies
+        </legend>
+        <div
+          class="flex"
+          data-part="fieldsWrapper"
+        >
+          
+          Hello world
+          
+        </div>
+      </fieldset>
     </div>,
     "_context": {
       "app": [Circular],
@@ -108,6 +120,9 @@ VueWrapper {
           Set {
             [Circular],
           },
+          Set {
+            [Circular],
+          },
         ],
         "fn": [Function],
         "onTrack": undefined,
@@ -153,6 +168,9 @@ VueWrapper {
             "active": true,
             "allowRecurse": true,
             "deps": [
+              Set {
+                [Circular],
+              },
               Set {
                 [Circular],
               },
@@ -225,10 +243,8 @@ VueWrapper {
           "c": null,
           "components": {},
           "ctx": {
-            "color": "default",
-            "size": "default",
+            "label": "Movies",
             "style": "default",
-            "tag": "p",
           },
           "da": null,
           "data": {},
@@ -241,9 +257,13 @@ VueWrapper {
               "_setter": [Function],
               "_value": {
                 "component": [
-                  "font-sans",
-                  "text-slate-500",
-                  "text-base",
+                  "p-4 border border-gray-200 mb-4",
+                ],
+                "fieldsWrapper": [
+                  "flex",
+                ],
+                "label": [
+                  "text-sky-900 py-2 px-4 border border-gray-200 rounded",
                 ],
               },
               "dep": Set {
@@ -251,10 +271,10 @@ VueWrapper {
                   "active": true,
                   "allowRecurse": true,
                   "deps": [
+                    [Circular],
                     Set {
                       [Circular],
                     },
-                    [Circular],
                   ],
                   "fn": [Function],
                   "onTrack": undefined,
@@ -270,12 +290,6 @@ VueWrapper {
                   Set {
                     [Circular],
                   },
-                  Set {
-                    [Circular],
-                  },
-                  Set {
-                    [Circular],
-                  },
                 ],
                 "fn": [Function],
                 "parent": undefined,
@@ -284,31 +298,30 @@ VueWrapper {
             },
             "parts": {
               "component": {
-                "color": {
-                  "default": [
-                    "text-slate-500",
-                  ],
-                },
-                "size": {
-                  "default": [
-                    "text-base",
-                  ],
-                  "title": [
-                    "text-2xl",
-                  ],
-                },
                 "style": {
                   "default": [
-                    "font-sans",
+                    "p-4 border border-gray-200 mb-4",
+                  ],
+                },
+              },
+              "fieldsWrapper": {
+                "style": {
+                  "default": [
+                    "flex",
+                  ],
+                },
+              },
+              "label": {
+                "style": {
+                  "default": [
+                    "text-sky-900 py-2 px-4 border border-gray-200 rounded",
                   ],
                 },
               },
             },
             "props": {
-              "color": "default",
-              "size": "default",
+              "label": "Movies",
               "style": "default",
-              "tag": "p",
             },
           },
           "directives": null,
@@ -347,24 +360,16 @@ VueWrapper {
           "next": null,
           "parent": [Circular],
           "props": {
-            "color": "default",
-            "size": "default",
+            "label": "Movies",
             "style": "default",
-            "tag": "p",
           },
           "propsDefaults": {},
           "propsOptions": [
             {
-              "color": {
+              "label": {
                 "0": false,
                 "1": true,
-                "default": "default",
-                "type": [Function],
-              },
-              "size": {
-                "0": false,
-                "1": true,
-                "default": "default",
+                "required": true,
                 "type": [Function],
               },
               "style": {
@@ -373,27 +378,15 @@ VueWrapper {
                 "default": "default",
                 "type": [Function],
               },
-              "tag": {
-                "0": false,
-                "1": true,
-                "default": "p",
-                "required": false,
-                "type": [Function],
-              },
             },
             [
               "style",
-              "color",
-              "size",
-              "tag",
             ],
           ],
           "provides": {},
           "proxy": {
-            "color": "default",
-            "size": "default",
+            "label": "Movies",
             "style": "default",
-            "tag": "p",
           },
           "refs": {},
           "render": [Function],
@@ -415,9 +408,13 @@ VueWrapper {
                   "_setter": [Function],
                   "_value": {
                     "component": [
-                      "font-sans",
-                      "text-slate-500",
-                      "text-base",
+                      "p-4 border border-gray-200 mb-4",
+                    ],
+                    "fieldsWrapper": [
+                      "flex",
+                    ],
+                    "label": [
+                      "text-sky-900 py-2 px-4 border border-gray-200 rounded",
                     ],
                   },
                   "dep": Set {
@@ -425,10 +422,10 @@ VueWrapper {
                       "active": true,
                       "allowRecurse": true,
                       "deps": [
+                        [Circular],
                         Set {
                           [Circular],
                         },
-                        [Circular],
                       ],
                       "fn": [Function],
                       "onTrack": undefined,
@@ -440,12 +437,6 @@ VueWrapper {
                   "effect": [Circular],
                 },
                 "deps": [
-                  Set {
-                    [Circular],
-                  },
-                  Set {
-                    [Circular],
-                  },
                   Set {
                     [Circular],
                   },
@@ -484,38 +475,41 @@ VueWrapper {
           "setupState": {
             "part": {
               "component": [
-                "font-sans",
-                "text-slate-500",
-                "text-base",
+                "p-4 border border-gray-200 mb-4",
+              ],
+              "fieldsWrapper": [
+                "flex",
+              ],
+              "label": [
+                "text-sky-900 py-2 px-4 border border-gray-200 rounded",
               ],
             },
             "parts": {
               "component": {
-                "color": {
-                  "default": [
-                    "text-slate-500",
-                  ],
-                },
-                "size": {
-                  "default": [
-                    "text-base",
-                  ],
-                  "title": [
-                    "text-2xl",
-                  ],
-                },
                 "style": {
                   "default": [
-                    "font-sans",
+                    "p-4 border border-gray-200 mb-4",
+                  ],
+                },
+              },
+              "fieldsWrapper": {
+                "style": {
+                  "default": [
+                    "flex",
+                  ],
+                },
+              },
+              "label": {
+                "style": {
+                  "default": [
+                    "text-sky-900 py-2 px-4 border border-gray-200 rounded",
                   ],
                 },
               },
             },
             "props": {
-              "color": "default",
-              "size": "default",
+              "label": "Movies",
               "style": "default",
-              "tag": "p",
             },
           },
           "slots": {
@@ -531,50 +525,28 @@ VueWrapper {
               {
                 "__v_isVNode": true,
                 "__v_skip": true,
-                "anchor": ,
+                "anchor": null,
                 "appContext": null,
-                "children": [
-                  {
-                    "__v_isVNode": true,
-                    "__v_skip": true,
-                    "anchor": null,
-                    "appContext": null,
-                    "children": "Hello world",
-                    "component": null,
-                    "dirs": null,
-                    "dynamicChildren": null,
-                    "dynamicProps": null,
-                    "el": Hello world,
-                    "key": null,
-                    "patchFlag": 0,
-                    "props": null,
-                    "ref": null,
-                    "scopeId": null,
-                    "shapeFlag": 8,
-                    "slotScopeIds": null,
-                    "ssContent": null,
-                    "ssFallback": null,
-                    "staticCount": 0,
-                    "suspense": null,
-                    "target": null,
-                    "targetAnchor": null,
-                    "transition": null,
-                    "type": Symbol(Text),
-                  },
-                ],
+                "children": "Movies",
                 "component": null,
                 "dirs": null,
                 "dynamicChildren": null,
                 "dynamicProps": null,
-                "el": ,
-                "key": "_default",
-                "patchFlag": -2,
+                "el": <legend
+                  class="text-sky-900 py-2 px-4 border border-gray-200 rounded"
+                  data-part="label"
+                >
+                  Movies
+                </legend>,
+                "key": null,
+                "patchFlag": 3,
                 "props": {
-                  "key": "_default",
+                  "class": "text-sky-900 py-2 px-4 border border-gray-200 rounded",
+                  "data-part": "label",
                 },
                 "ref": null,
                 "scopeId": null,
-                "shapeFlag": 16,
+                "shapeFlag": 9,
                 "slotScopeIds": null,
                 "ssContent": null,
                 "ssFallback": null,
@@ -583,12 +555,142 @@ VueWrapper {
                 "target": null,
                 "targetAnchor": null,
                 "transition": null,
-                "type": Symbol(Fragment),
+                "type": "legend",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": ,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": "Hello world",
+                        "component": null,
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": Hello world,
+                        "key": null,
+                        "patchFlag": 0,
+                        "props": null,
+                        "ref": null,
+                        "scopeId": null,
+                        "shapeFlag": 8,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": Symbol(Text),
+                      },
+                    ],
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": ,
+                    "key": "_default",
+                    "patchFlag": -2,
+                    "props": {
+                      "key": "_default",
+                    },
+                    "ref": null,
+                    "scopeId": null,
+                    "shapeFlag": 16,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": Symbol(Fragment),
+                  },
+                ],
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <div
+                  class="flex"
+                  data-part="fieldsWrapper"
+                >
+                  
+                  Hello world
+                  
+                </div>,
+                "key": null,
+                "patchFlag": 2,
+                "props": {
+                  "class": "flex",
+                  "data-part": "fieldsWrapper",
+                },
+                "ref": null,
+                "scopeId": null,
+                "shapeFlag": 17,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "div",
               },
             ],
             "component": null,
             "dirs": null,
             "dynamicChildren": [
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": "Movies",
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <legend
+                  class="text-sky-900 py-2 px-4 border border-gray-200 rounded"
+                  data-part="label"
+                >
+                  Movies
+                </legend>,
+                "key": null,
+                "patchFlag": 3,
+                "props": {
+                  "class": "text-sky-900 py-2 px-4 border border-gray-200 rounded",
+                  "data-part": "label",
+                },
+                "ref": null,
+                "scopeId": null,
+                "shapeFlag": 9,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "legend",
+              },
               {
                 "__v_isVNode": true,
                 "__v_skip": true,
@@ -646,22 +748,130 @@ VueWrapper {
                 "transition": null,
                 "type": Symbol(Fragment),
               },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": ,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": "Hello world",
+                        "component": null,
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": Hello world,
+                        "key": null,
+                        "patchFlag": 0,
+                        "props": null,
+                        "ref": null,
+                        "scopeId": null,
+                        "shapeFlag": 8,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": Symbol(Text),
+                      },
+                    ],
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": ,
+                    "key": "_default",
+                    "patchFlag": -2,
+                    "props": {
+                      "key": "_default",
+                    },
+                    "ref": null,
+                    "scopeId": null,
+                    "shapeFlag": 16,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": Symbol(Fragment),
+                  },
+                ],
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <div
+                  class="flex"
+                  data-part="fieldsWrapper"
+                >
+                  
+                  Hello world
+                  
+                </div>,
+                "key": null,
+                "patchFlag": 2,
+                "props": {
+                  "class": "flex",
+                  "data-part": "fieldsWrapper",
+                },
+                "ref": null,
+                "scopeId": null,
+                "shapeFlag": 17,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "div",
+              },
             ],
             "dynamicProps": [
-              "class",
+              "data-component",
             ],
-            "el": <p
-              class="font-sans text-slate-500 text-base"
+            "el": <fieldset
+              class="p-4 border border-gray-200 mb-4"
+              data-component="BonesFormFieldSet"
               data-part="component"
             >
-              
-              Hello world
-              
-            </p>,
+              <legend
+                class="text-sky-900 py-2 px-4 border border-gray-200 rounded"
+                data-part="label"
+              >
+                Movies
+              </legend>
+              <div
+                class="flex"
+                data-part="fieldsWrapper"
+              >
+                
+                Hello world
+                
+              </div>
+            </fieldset>,
             "key": null,
-            "patchFlag": 8,
+            "patchFlag": 10,
             "props": {
-              "class": "font-sans text-slate-500 text-base",
+              "class": "p-4 border border-gray-200 mb-4",
+              "data-component": "BonesFormFieldSet",
               "data-part": "component",
             },
             "ref": null,
@@ -675,26 +885,20 @@ VueWrapper {
             "target": null,
             "targetAnchor": null,
             "transition": null,
-            "type": "p",
+            "type": "fieldset",
           },
           "suspense": null,
           "suspenseId": 0,
           "type": {
-            "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/Text/Text.vue",
-            "__hmrId": "6dc3e16f",
+            "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/FormFieldSet/FormFieldSet.vue",
+            "__hmrId": "5b076dcf",
             "components": {},
-            "name": "BonesText",
+            "name": "BonesFormFieldSet",
             "props": {
-              "color": {
+              "label": {
                 "0": false,
                 "1": true,
-                "default": "default",
-                "type": [Function],
-              },
-              "size": {
-                "0": false,
-                "1": true,
-                "default": "default",
+                "required": true,
                 "type": [Function],
               },
               "style": {
@@ -703,19 +907,12 @@ VueWrapper {
                 "default": "default",
                 "type": [Function],
               },
-              "tag": {
-                "0": false,
-                "1": true,
-                "default": "p",
-                "required": false,
-                "type": [Function],
-              },
             },
             "render": [Function],
             "setup": [Function],
           },
           "u": null,
-          "uid": 9,
+          "uid": 7,
           "um": null,
           "update": [Function],
           "vnode": [Circular],
@@ -724,17 +921,30 @@ VueWrapper {
         "dirs": null,
         "dynamicChildren": null,
         "dynamicProps": null,
-        "el": <p
-          class="font-sans text-slate-500 text-base"
+        "el": <fieldset
+          class="p-4 border border-gray-200 mb-4"
+          data-component="BonesFormFieldSet"
           data-part="component"
         >
-          
-          Hello world
-          
-        </p>,
+          <legend
+            class="text-sky-900 py-2 px-4 border border-gray-200 rounded"
+            data-part="label"
+          >
+            Movies
+          </legend>
+          <div
+            class="flex"
+            data-part="fieldsWrapper"
+          >
+            
+            Hello world
+            
+          </div>
+        </fieldset>,
         "key": null,
         "patchFlag": 0,
         "props": {
+          "label": "Movies",
           "ref": "VTU_COMPONENT",
         },
         "ref": {
@@ -754,34 +964,21 @@ VueWrapper {
         "targetAnchor": null,
         "transition": null,
         "type": {
-          "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/Text/Text.vue",
-          "__hmrId": "6dc3e16f",
+          "__file": "/Users/liamhall/Documents/web-development/applications/barebones/src/components/FormFieldSet/FormFieldSet.vue",
+          "__hmrId": "5b076dcf",
           "components": {},
-          "name": "BonesText",
+          "name": "BonesFormFieldSet",
           "props": {
-            "color": {
+            "label": {
               "0": false,
               "1": true,
-              "default": "default",
-              "type": [Function],
-            },
-            "size": {
-              "0": false,
-              "1": true,
-              "default": "default",
+              "required": true,
               "type": [Function],
             },
             "style": {
               "0": false,
               "1": true,
               "default": "default",
-              "type": [Function],
-            },
-            "tag": {
-              "0": false,
-              "1": true,
-              "default": "p",
-              "required": false,
               "type": [Function],
             },
           },
@@ -796,7 +993,7 @@ VueWrapper {
         "render": [Function],
       },
       "u": null,
-      "uid": 8,
+      "uid": 6,
       "um": null,
       "update": [Function],
       "vnode": {
@@ -839,14 +1036,26 @@ VueWrapper {
         "dirs": null,
         "dynamicChildren": null,
         "dynamicProps": null,
-        "el": <p
-          class="font-sans text-slate-500 text-base"
+        "el": <fieldset
+          class="p-4 border border-gray-200 mb-4"
+          data-component="BonesFormFieldSet"
           data-part="component"
         >
-          
-          Hello world
-          
-        </p>,
+          <legend
+            class="text-sky-900 py-2 px-4 border border-gray-200 rounded"
+            data-part="label"
+          >
+            Movies
+          </legend>
+          <div
+            class="flex"
+            data-part="fieldsWrapper"
+          >
+            
+            Hello world
+            
+          </div>
+        </fieldset>,
         "key": null,
         "patchFlag": 0,
         "props": null,
@@ -869,7 +1078,7 @@ VueWrapper {
       "withProxy": null,
     },
     "_props": null,
-    "_uid": 4,
+    "_uid": 3,
     "component": [Function],
     "config": {
       "compilerOptions": {},
@@ -890,20 +1099,30 @@ VueWrapper {
   },
   "__setProps": [Function],
   "componentVM": {
-    "color": "default",
-    "size": "default",
+    "label": "Movies",
     "style": "default",
-    "tag": "p",
   },
   "isDisabled": [Function],
   "rootVM": {},
-  "wrapperElement": <p
-    class="font-sans text-slate-500 text-base"
+  "wrapperElement": <fieldset
+    class="p-4 border border-gray-200 mb-4"
+    data-component="BonesFormFieldSet"
     data-part="component"
   >
-    
-    Hello world
-    
-  </p>,
+    <legend
+      class="text-sky-900 py-2 px-4 border border-gray-200 rounded"
+      data-part="label"
+    >
+      Movies
+    </legend>
+    <div
+      class="flex"
+      data-part="fieldsWrapper"
+    >
+      
+      Hello world
+      
+    </div>
+  </fieldset>,
 }
 `;

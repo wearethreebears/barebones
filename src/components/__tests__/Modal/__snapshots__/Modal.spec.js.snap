@@ -12,7 +12,7 @@ VueWrapper {
     >
       
       <button
-        class="p-4 bg-red-500"
+        class="py-2 px-4 rounded text-white border bg-sky-600 border-sky-700"
         data-component="BonesButton"
         data-part="component"
         type="button"
@@ -549,8 +549,7 @@ VueWrapper {
               "_setter": [Function],
               "_value": {
                 "component": [
-                  "w-11/12 max-w-4xl rounded drop-shadow-md p-4 my-20 relative",
-                  "bg-white",
+                  "w-11/12 max-w-4xl rounded drop-shadow-md p-4 my-20 relative bg-white",
                 ],
                 "modalClose": [
                   "absolute top-4 right-4",
@@ -596,8 +595,7 @@ VueWrapper {
               "component": {
                 "color": {
                   "default": [
-                    "w-11/12 max-w-4xl rounded drop-shadow-md p-4 my-20 relative",
-                    "bg-white",
+                    "w-11/12 max-w-4xl rounded drop-shadow-md p-4 my-20 relative bg-white",
                   ],
                 },
               },
@@ -860,8 +858,7 @@ VueWrapper {
                   "_setter": [Function],
                   "_value": {
                     "component": [
-                      "w-11/12 max-w-4xl rounded drop-shadow-md p-4 my-20 relative",
-                      "bg-white",
+                      "w-11/12 max-w-4xl rounded drop-shadow-md p-4 my-20 relative bg-white",
                     ],
                     "modalClose": [
                       "absolute top-4 right-4",
@@ -1125,8 +1122,7 @@ VueWrapper {
             </h2>,
             "part": {
               "component": [
-                "w-11/12 max-w-4xl rounded drop-shadow-md p-4 my-20 relative",
-                "bg-white",
+                "w-11/12 max-w-4xl rounded drop-shadow-md p-4 my-20 relative bg-white",
               ],
               "modalClose": [
                 "absolute top-4 right-4",
@@ -1139,8 +1135,7 @@ VueWrapper {
               "component": {
                 "color": {
                   "default": [
-                    "w-11/12 max-w-4xl rounded drop-shadow-md p-4 my-20 relative",
-                    "bg-white",
+                    "w-11/12 max-w-4xl rounded drop-shadow-md p-4 my-20 relative bg-white",
                   ],
                 },
               },
@@ -1347,8 +1342,8 @@ VueWrapper {
                       "_setter": [Function],
                       "_value": {
                         "component": [
-                          "p-4",
-                          "bg-red-500",
+                          "py-2 px-4 rounded text-white border",
+                          "bg-sky-600 border-sky-700",
                         ],
                       },
                       "dep": Set {
@@ -1422,20 +1417,20 @@ VueWrapper {
                       "component": {
                         "design": {
                           "default": [
-                            "p-4",
-                            "bg-red-500",
+                            "py-2 px-4 rounded text-white border",
+                            "bg-sky-600 border-sky-700",
                           ],
-                          "default-blue": [
-                            "p-4",
-                            "bg-sky-500",
+                          "default-grey": [
+                            "py-2 px-4 rounded text-white border",
+                            "bg-gray-500 border-gray-600",
                           ],
                           "line": [
-                            "border-b-2",
-                            "border-red-500",
+                            "border-b-2 py-2",
+                            "border-sky-500 text-gray-600",
                           ],
-                          "line-blue": [
-                            "border-b-2",
-                            "border-sky-500",
+                          "line-grey": [
+                            "border-b-2 py-2",
+                            "border-gray-500 text-gray-600",
                           ],
                         },
                       },
@@ -1581,8 +1576,8 @@ VueWrapper {
                           "_setter": [Function],
                           "_value": {
                             "component": [
-                              "p-4",
-                              "bg-red-500",
+                              "py-2 px-4 rounded text-white border",
+                              "bg-sky-600 border-sky-700",
                             ],
                           },
                           "dep": Set {
@@ -1815,28 +1810,28 @@ VueWrapper {
                     "focusOnButton": [Function],
                     "part": {
                       "component": [
-                        "p-4",
-                        "bg-red-500",
+                        "py-2 px-4 rounded text-white border",
+                        "bg-sky-600 border-sky-700",
                       ],
                     },
                     "parts": {
                       "component": {
                         "design": {
                           "default": [
-                            "p-4",
-                            "bg-red-500",
+                            "py-2 px-4 rounded text-white border",
+                            "bg-sky-600 border-sky-700",
                           ],
-                          "default-blue": [
-                            "p-4",
-                            "bg-sky-500",
+                          "default-grey": [
+                            "py-2 px-4 rounded text-white border",
+                            "bg-gray-500 border-gray-600",
                           ],
                           "line": [
-                            "border-b-2",
-                            "border-red-500",
+                            "border-b-2 py-2",
+                            "border-sky-500 text-gray-600",
                           ],
-                          "line-blue": [
-                            "border-b-2",
-                            "border-sky-500",
+                          "line-grey": [
+                            "border-b-2 py-2",
+                            "border-gray-500 text-gray-600",
                           ],
                         },
                       },
@@ -1896,7 +1891,7 @@ VueWrapper {
                       "asyncDep": null,
                       "asyncResolved": false,
                       "attrs": {
-                        "class": "p-4 bg-red-500",
+                        "class": "py-2 px-4 rounded text-white border bg-sky-600 border-sky-700",
                         "data-component": "BonesButton",
                         "data-part": "component",
                         "onClick": [Function],
@@ -1918,7 +1913,7 @@ VueWrapper {
                           "__v_isRef": true,
                           "__v_isShallow": false,
                           "_rawValue": <button
-                            class="p-4 bg-red-500"
+                            class="py-2 px-4 rounded text-white border bg-sky-600 border-sky-700"
                             data-component="BonesButton"
                             data-part="component"
                             type="button"
@@ -1932,7 +1927,7 @@ VueWrapper {
                             
                           </button>,
                           "_value": <button
-                            class="p-4 bg-red-500"
+                            class="py-2 px-4 rounded text-white border bg-sky-600 border-sky-700"
                             data-component="BonesButton"
                             data-part="component"
                             type="button"
@@ -2010,7 +2005,7 @@ VueWrapper {
                       },
                       "refs": {
                         "button": <button
-                          class="p-4 bg-red-500"
+                          class="py-2 px-4 rounded text-white border bg-sky-600 border-sky-700"
                           data-component="BonesButton"
                           data-part="component"
                           type="button"
@@ -2054,7 +2049,7 @@ VueWrapper {
                       },
                       "setupContext": {
                         "attrs": {
-                          "class": "p-4 bg-red-500",
+                          "class": "py-2 px-4 rounded text-white border bg-sky-600 border-sky-700",
                           "data-component": "BonesButton",
                           "data-part": "component",
                           "onClick": [Function],
@@ -2068,7 +2063,7 @@ VueWrapper {
                       },
                       "setupState": {
                         "button": <button
-                          class="p-4 bg-red-500"
+                          class="py-2 px-4 rounded text-white border bg-sky-600 border-sky-700"
                           data-component="BonesButton"
                           data-part="component"
                           type="button"
@@ -2339,7 +2334,7 @@ VueWrapper {
                           "type",
                         ],
                         "el": <button
-                          class="p-4 bg-red-500"
+                          class="py-2 px-4 rounded text-white border bg-sky-600 border-sky-700"
                           data-component="BonesButton"
                           data-part="component"
                           type="button"
@@ -2355,7 +2350,7 @@ VueWrapper {
                         "key": null,
                         "patchFlag": 24,
                         "props": {
-                          "class": "p-4 bg-red-500",
+                          "class": "py-2 px-4 rounded text-white border bg-sky-600 border-sky-700",
                           "data-component": "BonesButton",
                           "data-part": "component",
                           "onClick": [Function],
@@ -2412,7 +2407,7 @@ VueWrapper {
                       "class",
                     ],
                     "el": <button
-                      class="p-4 bg-red-500"
+                      class="py-2 px-4 rounded text-white border bg-sky-600 border-sky-700"
                       data-component="BonesButton"
                       data-part="component"
                       type="button"
@@ -2428,7 +2423,7 @@ VueWrapper {
                     "key": null,
                     "patchFlag": 1048,
                     "props": {
-                      "class": "p-4 bg-red-500",
+                      "class": "py-2 px-4 rounded text-white border bg-sky-600 border-sky-700",
                       "data-component": "BonesButton",
                       "data-part": "component",
                       "onClick": [Function],
@@ -2507,7 +2502,7 @@ VueWrapper {
                 "dynamicChildren": null,
                 "dynamicProps": null,
                 "el": <button
-                  class="p-4 bg-red-500"
+                  class="py-2 px-4 rounded text-white border bg-sky-600 border-sky-700"
                   data-component="BonesButton"
                   data-part="component"
                   type="button"
@@ -2643,10 +2638,8 @@ VueWrapper {
                       "_setter": [Function],
                       "_value": {
                         "component": [
-                          "transition-all duration-300",
-                          "opacity-0 invisible",
-                          "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
-                          "bg-slate-500",
+                          "transition-all duration-300 opacity-0 invisible",
+                          "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0 bg-slate-500",
                         ],
                         "overlayInner": [
                           "w-full h-full flex justify-center items-start overflow-y-auto relative",
@@ -2703,18 +2696,15 @@ VueWrapper {
                       "component": {
                         "color": {
                           "default": [
-                            "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
-                            "bg-slate-500",
+                            "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0 bg-slate-500",
                           ],
                         },
                         "state": {
                           "default": [
-                            "transition-all duration-300",
-                            "opacity-0 invisible",
+                            "transition-all duration-300 opacity-0 invisible",
                           ],
                           "open": [
-                            "transition-all duration-300",
-                            "opacity-100 visible",
+                            "transition-all duration-300 opacity-100 visible",
                           ],
                         },
                       },
@@ -2826,10 +2816,8 @@ VueWrapper {
                           "_setter": [Function],
                           "_value": {
                             "component": [
-                              "transition-all duration-300",
-                              "opacity-0 invisible",
-                              "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
-                              "bg-slate-500",
+                              "transition-all duration-300 opacity-0 invisible",
+                              "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0 bg-slate-500",
                             ],
                             "overlayInner": [
                               "w-full h-full flex justify-center items-start overflow-y-auto relative",
@@ -2895,10 +2883,8 @@ VueWrapper {
                                 "_setter": [Function],
                                 "_value": {
                                   "component": [
-                                    "transition-all duration-300",
-                                    "opacity-0 invisible",
-                                    "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
-                                    "bg-slate-500",
+                                    "transition-all duration-300 opacity-0 invisible",
+                                    "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0 bg-slate-500",
                                   ],
                                   "overlayInner": [
                                     "w-full h-full flex justify-center items-start overflow-y-auto relative",
@@ -2983,10 +2969,8 @@ VueWrapper {
                     "emit": [Function],
                     "part": {
                       "component": [
-                        "transition-all duration-300",
-                        "opacity-0 invisible",
-                        "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
-                        "bg-slate-500",
+                        "transition-all duration-300 opacity-0 invisible",
+                        "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0 bg-slate-500",
                       ],
                       "overlayInner": [
                         "w-full h-full flex justify-center items-start overflow-y-auto relative",
@@ -2996,18 +2980,15 @@ VueWrapper {
                       "component": {
                         "color": {
                           "default": [
-                            "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
-                            "bg-slate-500",
+                            "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0 bg-slate-500",
                           ],
                         },
                         "state": {
                           "default": [
-                            "transition-all duration-300",
-                            "opacity-0 invisible",
+                            "transition-all duration-300 opacity-0 invisible",
                           ],
                           "open": [
-                            "transition-all duration-300",
-                            "opacity-100 visible",
+                            "transition-all duration-300 opacity-100 visible",
                           ],
                         },
                       },
@@ -5371,8 +5352,8 @@ VueWrapper {
                       "_setter": [Function],
                       "_value": {
                         "component": [
-                          "p-4",
-                          "bg-red-500",
+                          "py-2 px-4 rounded text-white border",
+                          "bg-sky-600 border-sky-700",
                         ],
                       },
                       "dep": Set {
@@ -5446,20 +5427,20 @@ VueWrapper {
                       "component": {
                         "design": {
                           "default": [
-                            "p-4",
-                            "bg-red-500",
+                            "py-2 px-4 rounded text-white border",
+                            "bg-sky-600 border-sky-700",
                           ],
-                          "default-blue": [
-                            "p-4",
-                            "bg-sky-500",
+                          "default-grey": [
+                            "py-2 px-4 rounded text-white border",
+                            "bg-gray-500 border-gray-600",
                           ],
                           "line": [
-                            "border-b-2",
-                            "border-red-500",
+                            "border-b-2 py-2",
+                            "border-sky-500 text-gray-600",
                           ],
-                          "line-blue": [
-                            "border-b-2",
-                            "border-sky-500",
+                          "line-grey": [
+                            "border-b-2 py-2",
+                            "border-gray-500 text-gray-600",
                           ],
                         },
                       },
@@ -5605,8 +5586,8 @@ VueWrapper {
                           "_setter": [Function],
                           "_value": {
                             "component": [
-                              "p-4",
-                              "bg-red-500",
+                              "py-2 px-4 rounded text-white border",
+                              "bg-sky-600 border-sky-700",
                             ],
                           },
                           "dep": Set {
@@ -5839,28 +5820,28 @@ VueWrapper {
                     "focusOnButton": [Function],
                     "part": {
                       "component": [
-                        "p-4",
-                        "bg-red-500",
+                        "py-2 px-4 rounded text-white border",
+                        "bg-sky-600 border-sky-700",
                       ],
                     },
                     "parts": {
                       "component": {
                         "design": {
                           "default": [
-                            "p-4",
-                            "bg-red-500",
+                            "py-2 px-4 rounded text-white border",
+                            "bg-sky-600 border-sky-700",
                           ],
-                          "default-blue": [
-                            "p-4",
-                            "bg-sky-500",
+                          "default-grey": [
+                            "py-2 px-4 rounded text-white border",
+                            "bg-gray-500 border-gray-600",
                           ],
                           "line": [
-                            "border-b-2",
-                            "border-red-500",
+                            "border-b-2 py-2",
+                            "border-sky-500 text-gray-600",
                           ],
-                          "line-blue": [
-                            "border-b-2",
-                            "border-sky-500",
+                          "line-grey": [
+                            "border-b-2 py-2",
+                            "border-gray-500 text-gray-600",
                           ],
                         },
                       },
@@ -5927,7 +5908,7 @@ VueWrapper {
                       "asyncDep": null,
                       "asyncResolved": false,
                       "attrs": {
-                        "class": "p-4 bg-red-500",
+                        "class": "py-2 px-4 rounded text-white border bg-sky-600 border-sky-700",
                         "data-component": "BonesButton",
                         "data-part": "component",
                         "onClick": [Function],
@@ -5949,7 +5930,7 @@ VueWrapper {
                           "__v_isRef": true,
                           "__v_isShallow": false,
                           "_rawValue": <button
-                            class="p-4 bg-red-500"
+                            class="py-2 px-4 rounded text-white border bg-sky-600 border-sky-700"
                             data-component="BonesButton"
                             data-part="component"
                             type="button"
@@ -5963,7 +5944,7 @@ VueWrapper {
                             
                           </button>,
                           "_value": <button
-                            class="p-4 bg-red-500"
+                            class="py-2 px-4 rounded text-white border bg-sky-600 border-sky-700"
                             data-component="BonesButton"
                             data-part="component"
                             type="button"
@@ -6041,7 +6022,7 @@ VueWrapper {
                       },
                       "refs": {
                         "button": <button
-                          class="p-4 bg-red-500"
+                          class="py-2 px-4 rounded text-white border bg-sky-600 border-sky-700"
                           data-component="BonesButton"
                           data-part="component"
                           type="button"
@@ -6085,7 +6066,7 @@ VueWrapper {
                       },
                       "setupContext": {
                         "attrs": {
-                          "class": "p-4 bg-red-500",
+                          "class": "py-2 px-4 rounded text-white border bg-sky-600 border-sky-700",
                           "data-component": "BonesButton",
                           "data-part": "component",
                           "onClick": [Function],
@@ -6099,7 +6080,7 @@ VueWrapper {
                       },
                       "setupState": {
                         "button": <button
-                          class="p-4 bg-red-500"
+                          class="py-2 px-4 rounded text-white border bg-sky-600 border-sky-700"
                           data-component="BonesButton"
                           data-part="component"
                           type="button"
@@ -6370,7 +6351,7 @@ VueWrapper {
                           "type",
                         ],
                         "el": <button
-                          class="p-4 bg-red-500"
+                          class="py-2 px-4 rounded text-white border bg-sky-600 border-sky-700"
                           data-component="BonesButton"
                           data-part="component"
                           type="button"
@@ -6386,7 +6367,7 @@ VueWrapper {
                         "key": null,
                         "patchFlag": 24,
                         "props": {
-                          "class": "p-4 bg-red-500",
+                          "class": "py-2 px-4 rounded text-white border bg-sky-600 border-sky-700",
                           "data-component": "BonesButton",
                           "data-part": "component",
                           "onClick": [Function],
@@ -6443,7 +6424,7 @@ VueWrapper {
                       "class",
                     ],
                     "el": <button
-                      class="p-4 bg-red-500"
+                      class="py-2 px-4 rounded text-white border bg-sky-600 border-sky-700"
                       data-component="BonesButton"
                       data-part="component"
                       type="button"
@@ -6459,7 +6440,7 @@ VueWrapper {
                     "key": null,
                     "patchFlag": 1048,
                     "props": {
-                      "class": "p-4 bg-red-500",
+                      "class": "py-2 px-4 rounded text-white border bg-sky-600 border-sky-700",
                       "data-component": "BonesButton",
                       "data-part": "component",
                       "onClick": [Function],
@@ -6538,7 +6519,7 @@ VueWrapper {
                 "dynamicChildren": null,
                 "dynamicProps": null,
                 "el": <button
-                  class="p-4 bg-red-500"
+                  class="py-2 px-4 rounded text-white border bg-sky-600 border-sky-700"
                   data-component="BonesButton"
                   data-part="component"
                   type="button"
@@ -6681,10 +6662,8 @@ VueWrapper {
                       "_setter": [Function],
                       "_value": {
                         "component": [
-                          "transition-all duration-300",
-                          "opacity-0 invisible",
-                          "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
-                          "bg-slate-500",
+                          "transition-all duration-300 opacity-0 invisible",
+                          "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0 bg-slate-500",
                         ],
                         "overlayInner": [
                           "w-full h-full flex justify-center items-start overflow-y-auto relative",
@@ -6741,18 +6720,15 @@ VueWrapper {
                       "component": {
                         "color": {
                           "default": [
-                            "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
-                            "bg-slate-500",
+                            "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0 bg-slate-500",
                           ],
                         },
                         "state": {
                           "default": [
-                            "transition-all duration-300",
-                            "opacity-0 invisible",
+                            "transition-all duration-300 opacity-0 invisible",
                           ],
                           "open": [
-                            "transition-all duration-300",
-                            "opacity-100 visible",
+                            "transition-all duration-300 opacity-100 visible",
                           ],
                         },
                       },
@@ -6864,10 +6840,8 @@ VueWrapper {
                           "_setter": [Function],
                           "_value": {
                             "component": [
-                              "transition-all duration-300",
-                              "opacity-0 invisible",
-                              "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
-                              "bg-slate-500",
+                              "transition-all duration-300 opacity-0 invisible",
+                              "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0 bg-slate-500",
                             ],
                             "overlayInner": [
                               "w-full h-full flex justify-center items-start overflow-y-auto relative",
@@ -6933,10 +6907,8 @@ VueWrapper {
                                 "_setter": [Function],
                                 "_value": {
                                   "component": [
-                                    "transition-all duration-300",
-                                    "opacity-0 invisible",
-                                    "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
-                                    "bg-slate-500",
+                                    "transition-all duration-300 opacity-0 invisible",
+                                    "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0 bg-slate-500",
                                   ],
                                   "overlayInner": [
                                     "w-full h-full flex justify-center items-start overflow-y-auto relative",
@@ -7021,10 +6993,8 @@ VueWrapper {
                     "emit": [Function],
                     "part": {
                       "component": [
-                        "transition-all duration-300",
-                        "opacity-0 invisible",
-                        "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
-                        "bg-slate-500",
+                        "transition-all duration-300 opacity-0 invisible",
+                        "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0 bg-slate-500",
                       ],
                       "overlayInner": [
                         "w-full h-full flex justify-center items-start overflow-y-auto relative",
@@ -7034,18 +7004,15 @@ VueWrapper {
                       "component": {
                         "color": {
                           "default": [
-                            "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0",
-                            "bg-slate-500",
+                            "bg-opacity-75 z-50 fixed h-full w-full top-0 left-0 bg-slate-500",
                           ],
                         },
                         "state": {
                           "default": [
-                            "transition-all duration-300",
-                            "opacity-0 invisible",
+                            "transition-all duration-300 opacity-0 invisible",
                           ],
                           "open": [
-                            "transition-all duration-300",
-                            "opacity-100 visible",
+                            "transition-all duration-300 opacity-100 visible",
                           ],
                         },
                       },

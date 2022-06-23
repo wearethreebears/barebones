@@ -241,8 +241,7 @@ VueWrapper {
               "_setter": [Function],
               "_value": {
                 "component": [
-                  "grid",
-                  "grid-cols-12 w-full",
+                  "grid grid-cols-12 w-full",
                   "gap-4",
                 ],
               },
@@ -283,8 +282,7 @@ VueWrapper {
               "component": {
                 "columns": {
                   "default": [
-                    "grid",
-                    "grid-cols-12 w-full",
+                    "grid grid-cols-12 w-full",
                   ],
                 },
                 "gap": {
@@ -395,8 +393,7 @@ VueWrapper {
                   "_setter": [Function],
                   "_value": {
                     "component": [
-                      "grid",
-                      "grid-cols-12 w-full",
+                      "grid grid-cols-12 w-full",
                       "gap-4",
                     ],
                   },
@@ -461,8 +458,7 @@ VueWrapper {
           "setupState": {
             "part": {
               "component": [
-                "grid",
-                "grid-cols-12 w-full",
+                "grid grid-cols-12 w-full",
                 "gap-4",
               ],
             },
@@ -470,8 +466,7 @@ VueWrapper {
               "component": {
                 "columns": {
                   "default": [
-                    "grid",
-                    "grid-cols-12 w-full",
+                    "grid grid-cols-12 w-full",
                   ],
                 },
                 "gap": {

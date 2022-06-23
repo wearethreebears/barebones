@@ -80,7 +80,7 @@
   <br />
 
   <BonesGrid>
-    <BonesColumn :span="['4', 'md-6e']" class="text-white bg-red-500"
+    <BonesColumn :span="['4', 'md-6']" class="text-white bg-red-500"
       >Hello world</BonesColumn
     >
     <BonesColumn span="6" class="text-white bg-green-500"

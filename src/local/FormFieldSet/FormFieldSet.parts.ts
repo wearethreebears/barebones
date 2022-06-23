@@ -16,8 +16,8 @@ export default function FormFieldSetLocal(): FormFieldSet {
       },
     },
     fieldsWrapper: {
-      default: {
-        style: ["flex"],
+      style: {
+        default: ["flex"],
       },
     },
   };

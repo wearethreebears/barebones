@@ -4,8 +4,8 @@
     data-part="component"
     :class="part['component']"
     :action="props.action"
-    :method="props.method"
-    :enctype="encode"
+    :method="FORM_METHODS[props.method]"
+    :enctype="FORM_ENCODES[props.encode]"
   >
     <slot />
   </form>
@@ -36,12 +36,12 @@ const props = defineProps({
   },
   method: {
     required: false,
-    type: String as PropType<typeof FORM_METHODS[keyof typeof FORM_METHODS]>,
+    type: String as PropType<keyof typeof FORM_METHODS>,
     default: FORM_METHODS.POST,
   },
   encode: {
     required: false,
-    type: String as PropType<typeof FORM_ENCODES[keyof typeof FORM_ENCODES]>,
+    type: String as PropType<keyof typeof FORM_ENCODES>,
     default: FORM_ENCODES.DEFAULT,
   },
 });
