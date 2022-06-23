@@ -1,7 +1,11 @@
 <template>
-  <fieldset :data-component="$options.name" :class="part['component']">
-    <legend :class="part['legend']">{{ props.label }}</legend>
-    <div :class="part['fields']">
+  <fieldset
+    :data-component="$options.name"
+    :class="part['component']"
+    data-part="component"
+  >
+    <legend :class="part['label']" data-part="label">{{ props.label }}</legend>
+    <div :class="part['fieldsWrapper']" data-part="fieldsWrapper">
       <slot />
     </div>
   </fieldset>

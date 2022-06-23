@@ -10,6 +10,10 @@ export const classProps: ClassProps = {
     type: String as PropType<string>,
     default: "default",
   },
+  size: {
+    type: String as PropType<string>,
+    default: "default",
+  },
 };
 
 export default classProps;

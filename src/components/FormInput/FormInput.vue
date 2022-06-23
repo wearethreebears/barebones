@@ -2,7 +2,7 @@
   <BonesFormGroup
     :label="props.label"
     :name="props.name"
-    :type="props.type"
+    :group-type="props.type"
     v-bind="props.formGroupProps"
   >
     <component
@@ -17,7 +17,7 @@
       :aria-invalid="hasError(error)"
       :aria-errormessage="errorMessageId(error)"
       :checked="inputConfig.checked"
-      :value="getValue(props.value)"
+      :value="props.value"
       :id="id"
       :name="props.name"
       :multiple="inputConfig.isMultipleFileUpload"
@@ -26,7 +26,7 @@
       :step="inputConfig.step"
       @input="updateValue($event, props.type)"
     />
-    <slot v-if="slots.customInput" name="customInput" />
+    <div data-part="customInput" :class="part['customInput']" />
     <slot v-if="slots.icon" name="icon" />
   </BonesFormGroup>
 </template>
@@ -123,9 +123,4 @@ const inputConfig: ComputedRef<InputConfig> = computed(() => ({
   isMultipleFileUpload:
     props.multipleFiles && props.type === "file" ? true : undefined,
 }));
-
-const getValue = (value: any) => {
-  if (props.type === "file") return;
-  return value;
-};
 </script>

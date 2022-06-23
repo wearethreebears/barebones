@@ -2,35 +2,33 @@ import type { Parts } from "@barebones/types/component";
 import type { Tabs } from "@barebones/types/components/Tabs";
 
 // Base Classes
-const NavigationListDefault = "flex";
-const NavigationButtonThemeDefault = "p-4 text-white";
 
 export default function TabsLocal(): Tabs {
   const parts: Parts = {
     component: {
       theme: {
-        default: ["border-x border-b border-red-500"],
+        default: ["border-x border-b border-gray-200 rounded-b"],
       },
     },
     navigation: {
       theme: {
-        default: ["bg-red-500"],
+        default: ["bg-gray-200 rounded-t overflow-hidden"],
       },
     },
     navigationList: {
       theme: {
-        default: [NavigationListDefault],
+        default: ["flex"],
       },
     },
     navigationListItem: {},
     navigationButton: {
       theme: {
-        default: [NavigationButtonThemeDefault],
+        default: ["p-4 text-white bg-grey-300 text-sky-900"],
       },
     },
     navigationButtonActive: {
       theme: {
-        default: [NavigationButtonThemeDefault, "bg-red-400"],
+        default: ["p-4 text-white bg-sky-600 text-white"],
       },
     },
     contentItems: {},

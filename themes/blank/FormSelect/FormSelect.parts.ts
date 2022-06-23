@@ -1,9 +1,9 @@
 import type { Parts } from "@barebones/types/component";
-import type { FormError } from "@barebones/types/components/FormError";
+import type { FormSelect } from "@barebones/types/components/FormSelect";
 
 // Base styles
 
-export default function FormErrorLocal(): FormError {
+export default function FormSelectLocal(): FormSelect {
   const parts: Parts = {
     component: {},
   };

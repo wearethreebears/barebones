@@ -1,5 +1,11 @@
 <template>
   <BonesForm>
+    <BonesFormInput
+      name="my-checkbox"
+      label="Checkbox"
+      v-model:value="formData.checkbox"
+      type="checkbox"
+    />
     <BonesFormSelect
       name="film"
       label="Film"
@@ -22,6 +28,7 @@
       name="file"
       label="Files"
       multiple-files
+      value=""
       v-model:value="formData.files"
     />
     <BonesFormInput
@@ -52,8 +59,8 @@
   </BonesForm>
   <BonesButton design="line">TEST</BonesButton>&nbsp;&nbsp;&nbsp;&nbsp;
   <BonesButton @click="log">TEST</BonesButton>&nbsp;&nbsp;&nbsp;&nbsp;
-  <BonesButton design="default-blue">TEST</BonesButton>&nbsp;&nbsp;&nbsp;&nbsp;
-  <BonesButton design="line-blue">TEST</BonesButton>&nbsp;&nbsp;&nbsp;&nbsp;
+  <BonesButton design="default-grey">TEST</BonesButton>&nbsp;&nbsp;&nbsp;&nbsp;
+  <BonesButton design="line-grey">TEST</BonesButton>&nbsp;&nbsp;&nbsp;&nbsp;
   <br />
   <br />
   <hr />
@@ -117,8 +124,10 @@
   <br />
   <br />
 
-  <BonesModal :modal-open-props="{ design: 'line-blue' }">
-    <template #title><BonesText tag="span">Hello world</BonesText></template>
+  <BonesModal>
+    <template #title
+      ><BonesText tag="h2" size="title">Hello world</BonesText></template
+    >
     <BonesText>Hello world from Modal</BonesText>
   </BonesModal>
 
@@ -158,6 +167,7 @@ const formData = reactive({
   range: "30",
   files: undefined,
   film: "mario",
+  checkbox: false,
 });
 
 const log = () => console.log(formData);

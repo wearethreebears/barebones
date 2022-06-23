@@ -1427,7 +1427,7 @@ VueWrapper {
                           ],
                           "default-blue": [
                             "p-4",
-                            "bg-blue-500",
+                            "bg-sky-500",
                           ],
                           "line": [
                             "border-b-2",
@@ -1435,7 +1435,7 @@ VueWrapper {
                           ],
                           "line-blue": [
                             "border-b-2",
-                            "border-blue-500",
+                            "border-sky-500",
                           ],
                         },
                       },
@@ -1828,7 +1828,7 @@ VueWrapper {
                           ],
                           "default-blue": [
                             "p-4",
-                            "bg-blue-500",
+                            "bg-sky-500",
                           ],
                           "line": [
                             "border-b-2",
@@ -1836,7 +1836,7 @@ VueWrapper {
                           ],
                           "line-blue": [
                             "border-b-2",
-                            "border-blue-500",
+                            "border-sky-500",
                           ],
                         },
                       },
@@ -5451,7 +5451,7 @@ VueWrapper {
                           ],
                           "default-blue": [
                             "p-4",
-                            "bg-blue-500",
+                            "bg-sky-500",
                           ],
                           "line": [
                             "border-b-2",
@@ -5459,7 +5459,7 @@ VueWrapper {
                           ],
                           "line-blue": [
                             "border-b-2",
-                            "border-blue-500",
+                            "border-sky-500",
                           ],
                         },
                       },
@@ -5852,7 +5852,7 @@ VueWrapper {
                           ],
                           "default-blue": [
                             "p-4",
-                            "bg-blue-500",
+                            "bg-sky-500",
                           ],
                           "line": [
                             "border-b-2",
@@ -5860,7 +5860,7 @@ VueWrapper {
                           ],
                           "line-blue": [
                             "border-b-2",
-                            "border-blue-500",
+                            "border-sky-500",
                           ],
                         },
                       },
