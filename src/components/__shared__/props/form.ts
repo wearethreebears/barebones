@@ -31,7 +31,9 @@ export const placeholder = {
 
 export const value = {
   required: false,
-  type: [String, Boolean, FileList] as PropType<string | boolean | FileList>,
+  type: [String, Boolean, Array, Object] as PropType<
+    string | boolean | FileList
+  >,
   default: "",
 };
 
