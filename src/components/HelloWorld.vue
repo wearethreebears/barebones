@@ -1,4 +1,8 @@
 <template>
+  <BonesAccordion name="some-title">
+    <template #title>This is a title</template>
+    <template #content>Content <button>Test</button></template>
+  </BonesAccordion>
   <BonesForm>
     <BonesFormInput
       name="my-checkbox"
@@ -148,6 +152,7 @@ import BonesForm from "./Form/Form.vue";
 import BonesFormFieldSet from "./FormFieldSet/FormFieldSet.vue";
 import BonesFormInput from "./FormInput/FormInput.vue";
 import BonesFormSelect from "./FormSelect/FormSelect.vue";
+import BonesAccordion from "./Accordion/Accordion.vue";
 
 const radioButtons = [
   { label: "Random 1", value: "radio-1" },
